@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.1.2
+    Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+    
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>My Awesome Site | It really is the best.</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="My Awesome Site" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="It really is the best." />
+<meta property="og:description" content="It really is the best." />
+<link rel="canonical" href="http://localhost:4000/2019-05-10-Collection-type/" />
+<meta property="og:url" content="http://localhost:4000/2019-05-10-Collection-type/" />
+<meta property="og:site_name" content="My Awesome Site" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-05-10T19:37:17+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"headline":"My Awesome Site","url":"http://localhost:4000/2019-05-10-Collection-type/","datePublished":"2019-05-10T19:37:17+09:00","dateModified":"2019-05-10T19:37:17+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019-05-10-Collection-type/"},"description":"It really is the best.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Lora:400,400i,700,700i">
+  <link rel="alternate" type="application/atom+xml" title="My Awesome Site" href="/atom.xml">
+<!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+
+  <body class="layout--post  ">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+  <div class="navigation-wrapper">
+    <a href="#menu-toggle" id="menu-toggle">Menu</a>
+    <nav id="primary-nav" class="site-nav animated drop">
+      <ul><li><a href="/">Home</a></li></ul>
+    </nav>
+  </div><!-- /.navigation-wrapper -->
+
+
+    <header class="masthead">
+  <div class="wrap">
+    
+    
+    
+      
+        <div class="site-title animated fadeIn"><a href="/">My Awesome Site</a></div>
+      
+      <p class="site-description animated fadeIn" itemprop="description">It really is the best.</p>
+    
+  </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article class="h-entry">
+    
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title p-name">
+</h1>
+        
+      </header>
+
+      <div class="page-sidebar">
+        <div class="page-author h-card p-author"><div class="author-info"><ul class="author-links"><li class="author-link">
+            <a class="u-url" rel="me" href=""><i class="fas fa-link fa-lg" title=""></i></a>
+          </li></ul>
+    <time class="page-date dt-published" datetime="2019-05-10T19:37:17+09:00"><a class="u-url" href="">May 10, 2019</a>
+</time>
+
+  </div>
+</div>
+
+        
+
+        
+
+      </div>
+
+      <div class="page-content">
+        <div class="e-content">
+          <p>=======
+title: “컬렉션 타입(Collection Types)”
+—</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p>c66f6a31695ebad872db34c95db2a1cae37ff68c</p>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<h1 id="컬렉션-타입collection-types">컬렉션 타입(Collection Types)</h1>
+
+<p>Swift는 세 가지 컬렉션 타입 Array와 Dictionary, Set을 제공한다.</p>
+<ul>
+  <li>Array는 같은 타입의 값을 순서대로 저장한다.</li>
+  <li>Dictionary는 같은 타입의 값을 순서 상관없이 저장하며 유일한 식별자(Key)를 통해 값을 찾는다.</li>
+  <li>Set은 순서가 존재하지 않고 동일한 값은 하나의 값으로 합쳐진다.</li>
+</ul>
+
+<h2 id="가변-컬렉션mutability-of-collections"><em>가변 컬렉션(Mutability of Collections)</em></h2>
+<hr />
+<p>컬렉션은 만들어 진 후 컬렉션에 있는 아이템이 추가되고 재배치되고 변경되기 때문에 변수에 할당된 컬렉션은 가변적이다.
+반면, 상수는 불변으로 크기나 내용은 변경할 수 없다.</p>
+
+<h2 id="배열array"><em>배열(Array)</em></h2>
+<hr />
+<p>배열은 같은 타입의 다중 값이 정렬된 순서로 저장한다. 배열에서 같은 값이지만 시간이 다르면 각각 다른 위치에 있다.</p>
+
+<h3 id="축약-배열-타입-문법array-type-shorthand-syntax">축약 배열 타입 문법(Array Type Shorthand Syntax)</h3>
+<p>Swift의 Array 타입은Array<SomeType>으로 작성, SomeType은 배열에 저장될 타입이다. 간단하게 쓰면[SomeType]으로 작성 가능하다.</SomeType></p>
+
+<h3 id="배열-표현식array-literals">배열 표현식(Array Literals)</h3>
+<p>배열은 하나 이상의 값을 축약 방식으로 작성하여 배열 컬렉션을 초기화 할 수 있다.
+배열 표기법은 값 목록을 콤마(,)로 분리하며 한 쌍의 중괄호로 감싸여 표현한다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">value</span> <span class="mi">1</span><span class="p">,</span> <span class="n">value</span> <span class="mi">2</span><span class="p">,</span> <span class="n">value</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="k">var</span> <span class="nv">studyList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="err">“</span><span class="kt">Math</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="kt">English</span><span class="err">”</span><span class="p">]</span>
+<span class="c1">// studyList has been initialized with two initial items</span>
+</code></pre></div></div>
+
+<p>또한, <code class="highlighter-rouge">[String]</code>에 영향을 받아 타입 추론을 통해 변수에 배열을 초기화하여 할당할 수 있다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="nv">studyList</span> <span class="o">=</span> <span class="p">[</span><span class="err">“</span><span class="kt">Math</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="kt">English</span><span class="err">”</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="배열의-접근과-수정accessing-and-modifying-an-array">배열의 접근과 수정(Accessing and Modifying an Array)</h3>
+
+<p>배열에 메소드와 속성 또는 아래 첨자 문법을 통해 접근 및 수정할 수 있음.
+다음은 배열의 개수를 확인하는 읽기 전용 <code class="highlighter-rouge">count</code> 속성이다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">println</span><span class="p">(</span><span class="err">“</span><span class="kt">The</span> <span class="n">study</span> <span class="n">list</span> <span class="n">contains</span> <span class="err">\</span><span class="p">(</span><span class="n">studyList</span><span class="o">.</span><span class="n">count</span><span class="p">)</span> <span class="n">items</span><span class="o">.</span><span class="err">”</span><span class="p">)</span>
+<span class="c1">// prints “The study list contains 2 items.”</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">count </code>속성을 이용하지 않고 <code class="highlighter-rouge">isEmpty</code> 속성을 통해 빠르게 배열이 비었는지 확인이 가능하다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">studyList</span><span class="o">.</span><span class="n">isEmpty</span> <span class="p">{</span>
+	<span class="nf">println</span><span class="p">(</span><span class="err">“</span><span class="kt">The</span> <span class="n">study</span> <span class="n">list</span> <span class="k">is</span> <span class="n">empty</span><span class="err">”</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+	<span class="nf">println</span><span class="p">(</span><span class="err">“</span><span class="kt">The</span> <span class="n">study</span> <span class="n">list</span> <span class="k">is</span> <span class="n">not</span> <span class="n">empty</span><span class="err">”</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// prints “The shopping list is not empty”</span>
+</code></pre></div></div>
+
+<p>Array 값들을 하나씩 꺼내오기 위해서는 for - in 반복문을 사용합니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">For</span> <span class="n">study</span> <span class="k">in</span> <span class="n">studyList</span> <span class="p">{</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">study</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// "Math", "English" 출력</span>
+</code></pre></div></div>
+
+<p>각 아이템에 정수 인덱스와 그 값이 필요하다면, <code class="highlighter-rouge">enumerate</code> 전역 함수를 사용한다.
+<code class="highlighter-rouge">enumberate</code> 함수는 배열에 각 아이템의 인덱스와 값으로 구성된 튜플을 반환합니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="k">in</span> <span class="nf">enumerate</span><span class="p">(</span><span class="n">studyList</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="err">“</span><span class="kt">Item</span> <span class="err">\</span><span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span> <span class="err">\</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="err">”</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// Item 1: Math</span>
+<span class="c1">// Item 2: English</span>
+</code></pre></div></div>
+
+<p>배열에 <code class="highlighter-rouge">append</code> 메소드를 통해 배열 끝에 새로운 값을 추가할 수 있습니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">studyList</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="err">“</span><span class="kt">Science</span><span class="err">”</span><span class="p">)</span>
+<span class="c1">// studyList now contains 3 items</span>
+</code></pre></div></div>
+
+<p>하나 이상 적절한 값을 가진 배열을 추가 할당 연산자(+=)를 이용하여 추가할 수 있습니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">studyList</span> <span class="o">+=</span> <span class="p">[</span><span class="err">“</span><span class="kt">History</span><span class="err">”</span><span class="p">]</span>
+<span class="c1">// studyList now contains 4 items</span>
+<span class="n">studyList</span> <span class="o">+=</span> <span class="p">[</span><span class="err">“</span><span class="kt">Social</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="kt">Arts</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="kt">Spanish</span><span class="err">”</span><span class="p">]</span>
+<span class="c1">// studyList now contains 7 items</span>
+</code></pre></div></div>
+
+<p>배열에 인덱스로 접근하여 값을 얻을 수 있습니다. 또한, 인덱스로 접근하여 값을 변경할 수 있습니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="nv">firstItem</span> <span class="o">=</span> <span class="n">studyList</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="c1">// firstItem is equal to “Math”</span>
+
+<span class="n">studylist</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s">"Technology"</span>
+<span class="c1">// the first item in the list is now equal to "Technology" rather than "Math"</span>
+</code></pre></div></div>
+
+<p>배열에 인덱스 범위를 통해 접근하여 값을 변경하거나 배열을 대체할 수 있습니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">studyList</span><span class="p">[</span><span class="mi">4</span><span class="o">...</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Engineering"</span><span class="p">,</span> <span class="s">"Mathematics"</span><span class="p">]</span>
+<span class="c1">// studyList now contains 6 items</span>
+<span class="c1">// replace "Social", "Arts" and "Spanish" to "Engineering" and  "Mathematics"</span>
+</code></pre></div></div>
+
+<p>배열의 <code class="highlighter-rouge">insert(atIndex:)</code>메소드를 호출하여 특정 인덱스에 삽입할 수 있습니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">studyList</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="s">"Korean"</span><span class="p">,</span> <span class="nv">at</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
+<span class="c1">// sutdyList now contains 7 items</span>
+<span class="c1">// "Korean" is now the first item in the list</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">.remove(at:)</code> <code class="highlighter-rouge">.removeLast()</code> <code class="highlighter-rouge">.popLast()</code> 메소드를 호출하여 특정 인덱스의 값을 제거할 수 있습니다.
+모두 값을 지우면서 지우는 값을 리턴합니다. 참고로 removeLast()는 Array에 값이 없을 때 crash하며, popLast()는 nil을 리턴합니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">studyList</span><span class="o">.</span><span class="nf">remove</span><span class="p">(</span><span class="nv">at</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
+<span class="c1">// studyList now contains 6 items</span>
+<span class="c1">// "Korean" has just been removed</span>
+
+<span class="n">studyList</span><span class="o">.</span><span class="nf">removeLast</span><span class="p">()</span>
+<span class="c1">// studyList now contains 5 items</span>
+<span class="c1">// "Mathematics" has just been removed</span>
+</code></pre></div></div>
+
+<p>배열의 각 값에 동일한 함수를 적용 시키려면 <code class="highlighter-rouge">.map()</code> 메소드를 호출하여 사용하면 됩니다.
+ <code class="highlighter-rouge">.map()</code> 메소드는 Array나 Dictionary와 같은 Collection Type의 각 값에 동일한 함수를 적용하여 결과를 도출할 때 사용합니다.
+ <code class="highlighter-rouge">.map()</code>의 구조는 배열.map(적용함수)로 이루어져 있습니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="nv">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="c1">// 각 값의 제곱을 값으로 갖는 새로운 배열을 생성하고자 한다.</span>
+
+<span class="c1">// 1) 반복문 for 사용</span>
+<span class="k">var</span> <span class="nv">squared</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+<span class="k">for</span> <span class="n">num</span> <span class="k">in</span> <span class="n">nubers</span> <span class="p">{</span>
+	<span class="n">squared</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">num</span><span class="o">*</span><span class="n">num</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// 2) map 사용</span>
+<span class="n">numbers</span><span class="o">.</span><span class="nf">map</span><span class="p">({</span> <span class="p">(</span><span class="nv">num</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="k">in</span><span class="o">.</span> <span class="n">eturn</span> <span class="n">num</span> <span class="o">*</span> <span class="n">num</span><span class="p">})</span>
+<span class="n">number</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="nv">$0</span> <span class="o">*</span> <span class="nv">$0</span> <span class="p">}</span> <span class="c1">// Trailing Closure Syntax 사용해서 단순화</span>
+</code></pre></div></div>
+
+<p>배열에서 특정 조건에 맞는 값들만 도출할 때 <code class="highlighter-rouge">.filter()</code>  메소드를 호출하여 사용합니다.  <code class="highlighter-rouge">.map()</code>의 구조와 유사하지만 Boolean 값을 리턴값으로 갖는 함수여야 합니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="nv">myArray</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
+<span class="c1">// 값들 중 짝수만 도출하고자 한다.</span>
+<span class="n">myArray</span><span class="o">.</span><span class="nf">filter</span><span class="p">({</span> <span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">in</span> <span class="k">return</span> <span class="n">value</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">})</span>
+<span class="n">myArray</span><span class="o">.</span><span class="n">filter</span> <span class="p">{</span> <span class="nv">$0</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">}</span> <span class="c1">//Trailing Clouser Syntax 사용해서 단순화</span>
+</code></pre></div></div>
+
+<p>배열을 하나의 값으로 통합시킬 때는 <code class="highlighter-rouge">.reduce()</code> 메소드를 호출하여 사용합니다. 메소드의 첫번째 인자값은 추가로 더해지는 값입니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 1). 숫자들 통합하기</span>
+<span class="k">var</span> <span class="nv">myArray</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
+<span class="n">myArray</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">+</span><span class="p">)</span>
+<span class="c1">// 0+1+4+5+10 인 20</span>
+<span class="n">myArray</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="o">+</span><span class="p">)</span>
+<span class="c1">// 100+1+4+5+10 인 120</span>
+
+<span class="c1">// 2). 문자들을 통합하기</span>
+<span class="k">var</span> <span class="nv">myStrings</span> <span class="o">=</span> <span class="p">[</span><span class="s">"I"</span><span class="p">,</span> <span class="s">"Love"</span><span class="p">,</span> <span class="s">"You"</span><span class="p">]</span>
+<span class="n">myStrings</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="s">""</span><span class="p">,</span> <span class="o">+</span><span class="p">)</span>
+<span class="c1">// "ILoveYou"</span>
+</code></pre></div></div>
+
+<h3 id="배열-생성과-초기화">배열 생성과 초기화</h3>
+
+<p>초기화 문법을 사용하여 특정 타입의 빈 배열을 만듬.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="nv">someInts</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+<span class="nf">println</span><span class="p">(</span><span class="err">“</span><span class="n">someInts</span> <span class="k">is</span> <span class="n">of</span> <span class="n">type</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="n">with</span> <span class="err">\</span><span class="p">(</span><span class="n">someInts</span><span class="o">.</span><span class="n">count</span><span class="p">)</span> <span class="n">items</span><span class="o">.</span><span class="err">”</span><span class="p">)</span>
+<span class="c1">// prints "someInts is of type [Int] with 0 items."</span>
+</code></pre></div></div>
+
+<p>someInt 변수는 <code class="highlighter-rouge">[Int]</code>에 영향을 받습니다. 이는 <code class="highlighter-rouge">[Int]</code> 초기화의 결과물에 설정됩니다.
+한번이라도 타입이 설정되면 <code class="highlighter-rouge">[]</code>로 초기화하여도 타입은 유지됨.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">someInts</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="c1">// someInts now contains 1 value of type Int</span>
+<span class="n">someInts</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1">// someInts is now an empty array, but is still of type [Int]</span>
+</code></pre></div></div>
+
+<p>Swift에 배열 타입은 특정 크기와 그 크기에 기본 값으로 설정할 수 있는 생성자를 제공. 이 생성자에 몇 개의 아이템을 넣을 것인지(count 호출), 적합한 타입의 기본 값(repeatedValue 호출)을 넘겨줌.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="nv">threeDoubles</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Double</span><span class="p">](</span><span class="nv">_count</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="nv">repeatedValue</span><span class="p">:</span> <span class="mf">0.0</span><span class="n">_</span><span class="p">)</span>
+<span class="c1">// threeDoubles is of type [Double], and equals [0.0, 0.0, 0.0]</span>
+</code></pre></div></div>
+
+<p>서로 같은 타입의 배열이 있으면 덧셈 연산자(+)를 이용하여 배열을 생성. 이 배열 타입은 앞에 배열에서 영감받아 같은 타입.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="nv">anotherThreeDoubles</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Double</span><span class="p">](</span><span class="nv">_count</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="nv">repeatedValue</span><span class="p">:</span> <span class="mf">2.5</span><span class="n">_</span><span class="p">)</span>
+<span class="c1">// anotherThreeDoubles is inferred as [Double], and equals [2.5, 2.5, 2.5]</span>
+ 
+<span class="k">var</span> <span class="nv">sixDoubles</span> <span class="o">=</span> <span class="n">threeDoubles</span> <span class="o">+</span> <span class="n">anotherThreeDoubles</span>
+<span class="c1">// sixDoubles is inferred as [Double], and equals [0.0, 0.0, 0.0, 2.5, 2.5, 2.5]</span>
+</code></pre></div></div>
+
+<h2 id="딕셔너리dictionaries"><em>딕셔너리(Dictionaries)</em></h2>
+<hr />
+<p>딕셔너리는 같은 타입의 여러 값을 저장하고 있는 컨테이너입니다. 
+사전처럼 “Key : Value” 구조로 이루어져 있습니다. 우리가 사전에서 Apple의 뜻을 찾는다고 할 때, Apple 이라는 단어가 Key이고, Apple의 뜻은 Value 라고 할 수 있습니다.</p>
+
+<p>Swift의 딕셔너리는 Objective-C의 NSDictionary와 NSMutableDictionary 클래스와는 다름. Swift의 배열과 마찬가지로 딕셔너리는 정해진 타입의 객체만 저장이 가능함.{: .notice–info}</p>
+
+<h3 id="축약-딕셔너리-타입-문법dictionary-type-shorthand-syntax">축약 딕셔너리 타입 문법(Dictionary Type Shorthand Syntax)</h3>
+
+<p>Swift 딕셔너리 타입은<code class="highlighter-rouge">Dictionary&lt;KeyType, ValueType&gt;</code>으로 쓰며, <code class="highlighter-rouge">KeyType</code>은 딕셔너리 키로 사용되는 값 타입 입니다.
+<code class="highlighter-rouge">ValueType</code>은 딕셔너리에 저장되는 값으로 키에 매칭되는 값 타입 입니다.</p>
+
+<p>딕셔너리 타입의 축약 문법은 <code class="highlighter-rouge">[KeyType: ValueType]</code></p>
+
+<h3 id="dictionaries-기본-형태">Dictionaries 기본 형태</h3>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Dictionary 타입을 추론하여 변수의 타입을 지정할 수 있다.</span>
+<span class="k">var</span> <span class="nv">myDict</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Germany"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s">"France"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s">"Sweden"</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="s">"Egypt"</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+
+<span class="c1">// 자료형 지정</span>
+<span class="k">var</span> <span class="nv">myDict</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Int</span><span class="p">]</span>
+
+<span class="c1">// 자료형 지정 및 초기화</span>
+<span class="k">var</span> <span class="nv">myDict</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Int</span><span class="p">]()</span>
+
+<span class="c1">// 다른 형태</span>
+<span class="k">var</span> <span class="nv">myDict</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="dictionary--접근과-수정accessing-and-modifying-a-dictionary">Dictionary  접근과 수정(Accessing and Modifying a Dictionary)</h3>
+
+<p>딕셔너리는 메소드와 속성 또는 서브스크립트 문법을 통해 접근과 수정이 가능합니다. 
+딕셔너리에서 아이템 갯수를 찾을 때 읽기 전용 count 속성을 통해 확인할 수 있습니다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">println</span><span class="p">(</span><span class="s">"The airports dictionary contains </span><span class="se">\(</span><span class="n">myDict</span><span class="o">.</span><span class="n">count</span><span class="se">)</span><span class="s"> items."</span><span class="p">)</span>
+<span class="c1">// "The airports dictionary contains 4 items." 가 출력된다.</span>
+</code></pre></div></div>
+
+<p>isEmpty 속성을 통해 빈 딕셔너리인지 확인이 가능합니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">myDict</span><span class="o">.</span><span class="n">isEmpty</span> <span class="p">{</span>
+	<span class="nf">println</span><span class="p">(</span><span class="s">"myDict 딕셔너리는 비어있습니다."</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+	<span class="nf">println</span><span class="p">(</span><span class="s">"myDict 딕셔너리는 비어있지 않습니다."</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// "myDict 딕셔너리는 비어있지 않습니다." 가 출력된다.</span>
+</code></pre></div></div>
+
+<p>서브스크립트 문법을 통해 딕셔너리에 새로운 아이템을 추가 할 수 있습니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">myDict</span><span class="p">[</span><span class="s">"England"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="c1">// Key : "England" , Value : 5 인 아이템이 추가되었다.</span>
+</code></pre></div></div>
+
+<p>서브스크립트 문법을 사용하여 특정 키에 연관된 값을 변경할 수 있습니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">myDict</span><span class="p">[</span><span class="s">"England"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="c1">// "England" 의 Value 5 가 6 으로 변경되었다.</span>
+</code></pre></div></div>
+
+<p>또한, 서브스크립트 문법을 통해 값을 확인할 수 있는데 이때 값이 없다면 nil을 반환합니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="k">let</span> <span class="nv">countryNumber</span> <span class="o">=</span> <span class="n">myDict</span><span class="p">[</span><span class="s">"Sweden"</span><span class="p">]</span> <span class="p">{</span>
+	<span class="nf">println</span><span class="p">(</span><span class="s">"The number of the country is </span><span class="se">\(</span><span class="n">countryNumber</span><span class="se">)</span><span class="s">."</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+	<span class="nf">println</span><span class="p">(</span><span class="s">"That country is not in the country dictionary."</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// "The number of the country is 3." 이 출력된다.</span>
+</code></pre></div></div>
+
+<p>서브스크립트 문접을 통해 딕셔너리에 할당된 값을 nil로 할당하여 아이템을 제거할 수 있습니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">myDict</span><span class="p">[</span><span class="s">"China"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="n">myDict</span><span class="p">[</span><span class="s">"China"</span><span class="p">]</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="c1">// Key값이 China인 아이템을 삭제했다.</span>
+<span class="n">myDict</span> <span class="o">=</span> <span class="p">[:]</span>	
+<span class="c1">// 완전 제거</span>
+</code></pre></div></div>
+
+<h3 id="dictionary-값-가져오기">Dictionary 값 가져오기</h3>
+
+<p>Array 때와 마찬가지로 for-in 반복문을 사용하여 각각의 값들을 가져올 수 있습니다.
+각각의 딕셔너리의 아이템은 <code class="highlighter-rouge">(key, value)</code> 튜플로 반환되는데 일시적인 상수나 변수로 튜플의 멤버로 분리할 수 있습니다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="n">countryName</span><span class="p">,</span> <span class="n">countryCode</span><span class="p">)</span> <span class="k">in</span> <span class="n">myDict</span> <span class="p">{</span>
+	<span class="nf">println</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">countryName</span><span class="se">)</span><span class="s">, </span><span class="se">\(</span><span class="n">countryCode</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// Germany : 1</span>
+<span class="c1">// France : 2</span>
+<span class="c1">// Sweden : 3</span>
+<span class="c1">// Egypt : 4</span>
+<span class="c1">// England : 6</span>
+
+<span class="k">for</span> <span class="n">country</span> <span class="k">in</span> <span class="n">myDict</span> <span class="p">{</span>
+	<span class="nf">print</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">country</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// ("Germnay", 1), ("France", 2), ("Sweden", 3), ("Egypt", 4), ("England", 6) 튜플 형식이 출력된다.  </span>
+</code></pre></div></div>
+
+<p>딕셔너리의 <code class="highlighter-rouge">keys</code>와 <code class="highlighter-rouge">values</code> 속성을 가지고 접근한 키나 값의 컬렉션을 반복하여 검색할 수 있습니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">countryName</span> <span class="k">in</span> <span class="n">myDict</span><span class="o">.</span><span class="n">keys</span> <span class="p">{</span>
+	<span class="nf">println</span><span class="p">(</span><span class="s">"Country Name : </span><span class="se">\(</span><span class="n">countryName</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// Country Name : Germany</span>
+<span class="c1">// Country Name : France</span>
+<span class="c1">// Country Name : Sweden</span>
+<span class="c1">// Country Name : Egypt</span>
+<span class="c1">// Country Name : England</span>
+
+<span class="k">for</span> <span class="n">countryCode</span> <span class="k">in</span> <span class="n">myDict</span><span class="o">.</span><span class="n">values</span> <span class="p">{</span>
+	<span class="nf">println</span><span class="p">(</span><span class="s">"Country Code : </span><span class="se">\(</span><span class="n">countryCode</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// Country Code : 1</span>
+<span class="c1">// Country Code : 2</span>
+<span class="c1">// Country Code : 3</span>
+<span class="c1">// Country Code : 4</span>
+<span class="c1">// Country Code : 6</span>
+
+</code></pre></div></div>
+
+<h3 id="빈-딕셔너리-생성creating-an-empty-dictionary">빈 딕셔너리 생성(Creating an Empty Dictionary)</h3>
+
+<p>배열처럼 딕셔너리도 초기화 문법을 사용하여 특정 타입의 빈 딕셔너리를 만들 수 있음.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var namesOfIntegers = [Int: String]()
+// namesOfIntegers is an empty [Int: String] dictionary
+</code></pre></div></div>
+
+<p>배열과 마찬가지로 이미 타입이 정해져 있는 딕셔너리를 빈 딕셔너리로 초기화하여도 타입은 그대로 유지됩니다. 빈 딕셔너리 표현법은 <code class="highlighter-rouge">[:]</code>로 사용합니다.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>namesOfIntegers[16] = “sixteen”
+// namesOfIntegers now contains 1 key-value pair
+namesOfIntegers = [:]
+// namesOfIntegers is once again an empty dictionary of type [Int: String]
+</code></pre></div></div>
+
+<h2 id="set"><em>Set</em></h2>
+
+<hr />
+<p>Set 은 집합입니다. 수학에서의 집합과 마찬가지로 여러 값 들의 묶음을 말하며, 이 값들은 순서가 존재하지 않고 동일한 값은 하나의 값으로 합쳐집니다.</p>
+
+<h3 id="set의-기본형태">Set의 기본형태</h3>
+<p>Set에 들어갈 수 있는 값들은 String, Int, Bool 등으로서 자체적으로 Hash Value를 생성할 수 있는 (Hashable) 자료형들 입니다.
+Hash Value는 자기 자신의 값을 Int로 표현하는 것으로 a == b 를 비교하는데 쓰이는 값 입니다. Set에 들어갈 수 있는 값들이 Hashable 해야하는 이유는 바로 이렇게 값 비교가 가능하여 동일한 중복값이 오지 못하게 막을 수 있어야 하기 때문입니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="nv">myValue</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">myValue</span><span class="o">.</span><span class="n">hashValue</span>
+<span class="c1">// 1 출력</span>
+
+<span class="k">let</span> <span class="nv">myInt</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">myInt</span><span class="o">.</span><span class="n">hashValue</span>
+<span class="c1">// 5 출력</span>
+
+<span class="mi">1</span><span class="o">.</span><span class="n">hashValue</span> <span class="o">==</span> <span class="kc">true</span><span class="o">.</span><span class="n">hashValue</span>
+<span class="c1">// true</span>
+
+<span class="k">let</span> <span class="nv">myString</span> <span class="o">=</span> <span class="s">"Hello"</span>
+<span class="n">myString</span><span class="o">.</span><span class="n">hashValue</span>
+<span class="c1">// 47994633090349462328</span>
+</code></pre></div></div>
+
+<p>빈 Set 생성</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="nv">emptySet</span> <span class="o">=</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">()</span>
+<span class="k">var</span> <span class="nv">emptySet2</span> <span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[]</span>
+</code></pre></div></div>
+
+<p>Set의 형태는 Array와 동일합니다. 
+이에 Set을 만들 때에는 아래처럼 Set 자료형을 반드시 표기해야 합니다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="nv">favoriteGenres</span><span class="p">:</span> <span class="kt">Set</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Rock"</span><span class="p">,</span> <span class="s">"Classical"</span><span class="p">,</span> <span class="s">"Hip Hop"</span><span class="p">,</span> <span class="s">"Rap"</span><span class="p">,</span> <span class="s">"Ballade"</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="집합에-속한-엘리먼트에-접근-하기">집합에 속한 엘리먼트에 접근 하기</h3>
+
+<p>여러 메소드들을 이용하여 집합에 속한 엘리먼트들에 접근하여 삭제 추가 등…. 여러 작업을 할 수 있습니다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">favoriteGenres</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="s">"Jazz"</span><span class="p">)</span>	<span class="c1">// 추가</span>
+<span class="n">favoriteGenres</span><span class="o">.</span><span class="nf">remove</span><span class="p">(</span><span class="s">"Rock"</span><span class="p">)</span> <span class="c1">// 제거</span>
+<span class="n">favoriteGenres</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="s">"Funk"</span><span class="p">)</span> <span class="c1">// 포함확인</span>
+<span class="n">favoriteGenres</span><span class="o">.</span><span class="n">count</span> <span class="c1">// 3</span>
+<span class="n">favortieGenres</span><span class="o">.</span><span class="n">isEmpty</span> <span class="c1">// false</span>
+<span class="n">favoriteGenres</span><span class="o">.</span><span class="nf">indexOf</span><span class="p">(</span><span class="s">"Hip Hop"</span><span class="p">)</span> <span class="c1">// "Hip Hop"의 인덱스</span>
+
+
+<span class="k">for</span> <span class="n">genre</span> <span class="k">in</span> <span class="n">favoriteGenres</span><span class="o">.</span><span class="nf">sorted</span><span class="p">()</span> <span class="p">{</span>
+		<span class="nf">print</span><span class="p">(</span><span class="n">genre</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// iterate</span>
+
+<span class="k">let</span> <span class="nv">item</span> <span class="o">=</span> <span class="n">favoriteGenres</span><span class="o">.</span><span class="nf">remove</span><span class="p">(</span><span class="s">"Jazz"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+<span class="c1">// 값이 존재하여 정상적으로 제거 된 경우 해당 값을 반환하고, 집합 내에 존재하지 않아 제거할 수 없는 경우에는 nil 값을 반환합니다.</span>
+
+<span class="k">if</span> <span class="k">let</span> <span class="nv">idx</span> <span class="o">=</span> <span class="n">favoriteGenres</span><span class="o">.</span><span class="nf">indexOf</span><span class="p">(</span><span class="s">"Classical"</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">var</span> <span class="nv">otherItem</span> <span class="o">=</span> <span class="n">forceAwakens</span><span class="o">.</span><span class="nf">removeAtIndex</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
+		<span class="nf">print</span><span class="p">(</span><span class="n">otherItem</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// 인덱스의 값을 이용하여 해당하는 엘리먼트를 집합에서 제거 할 수 있습니다.</span>
+
+<span class="k">for</span> <span class="n">character</span> <span class="k">in</span> <span class="p">[</span><span class="s">"Hip Hop"</span><span class="p">,</span> <span class="s">"Rap"</span><span class="p">]</span> <span class="p">{</span>
+		<span class="k">let</span> <span class="nv">character</span> <span class="o">=</span> <span class="n">favoriteGenres</span><span class="o">.</span><span class="nf">remove</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+		<span class="nf">print</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// for문을 이용하여 한번에 여러개의 값을 추가 하거나 삭제 시킬 수 있습니다.</span>
+
+<span class="n">favoriteGenres</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">()</span>
+<span class="c1">// 집합에 포함된 모든 엘리먼트를 제거 할 수 있습니다.</span>
+</code></pre></div></div>
+
+<h3 id="set-집합-메서드">Set 집합 메서드</h3>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">Set</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">Set</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">Set</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+
+<span class="n">a</span><span class="o">.</span><span class="nf">union</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">.</span><span class="nf">sorted</span><span class="p">()</span>
+<span class="c1">// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 합집합 A u B</span>
+
+<span class="n">a</span><span class="o">.</span><span class="nf">intersection</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">.</span><span class="nf">sorted</span><span class="p">()</span>
+<span class="c1">// [3, 5, 7] 교집합 A n C </span>
+
+<span class="n">a</span><span class="o">.</span><span class="nf">subtracting</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">.</span><span class="nf">sorted</span><span class="p">()</span>
+<span class="c1">// [1, 9] 차집합 A - C</span>
+
+<span class="n">a</span><span class="o">.</span><span class="nf">symmertricDifference</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">.</span><span class="nf">sorted</span><span class="p">()</span>
+<span class="c1">// [1, 2, 9] (A n C)의 여집합 : (A u C) - (A n C)</span>
+</code></pre></div></div>
+
+<p>isSubsetOf(<em>:) : 집합이 파라미터의 부분집합인지 True, False로 리턴
+isSupersetOf(</em>:) : 집합이 파라미터의 상위집합인지 True, False로 리턴
+isStrictSubsetOf(<em>:) : 집합이 파라미터의 부분집합인지 True, False로 리턴. 단, 파라미터와 같은 집합일 경우 False리턴
+isStrictSupersetOf(</em>:) : 집합이 파라미터의 상위집합인지 True, False로 리턴. 단, 파라미터와 같은 집합일 경우 False리턴
+isDisjointWith(_:) : 집합이 파라미터와 교집합이 없을 때 True를 리턴. 교집합이 있으면 False를 리턴.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="nv">A</span> <span class="p">:</span> <span class="kt">Set</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">B</span> <span class="p">:</span> <span class="kt">Set</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">C</span> <span class="p">:</span> <span class="kt">Set</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">D</span> <span class="p">:</span> <span class="kt">Set</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="kt">B</span><span class="o">.</span><span class="nf">isSubsetOf</span><span class="p">(</span><span class="kt">A</span><span class="p">)</span> <span class="c1">//True</span>
+<span class="kt">B</span><span class="o">.</span><span class="nf">isStrictSubsetOf</span><span class="p">(</span><span class="kt">D</span><span class="p">)</span> <span class="c1">//False</span>
+<span class="kt">A</span><span class="o">.</span><span class="nf">isSupersetOf</span><span class="p">(</span><span class="kt">B</span><span class="p">)</span> <span class="c1">//True</span>
+<span class="kt">D</span><span class="o">.</span><span class="nf">isStrictSupersetOf</span><span class="p">(</span><span class="kt">B</span><span class="p">)</span> <span class="c1">//False</span>
+<span class="kt">A</span><span class="o">.</span><span class="nf">isDisjointWith</span><span class="p">(</span><span class="kt">C</span><span class="p">)</span> <span class="c1">//True</span>
+</code></pre></div></div>
+
+<p>참조 - <a href="http://minsone.github.io/mac/ios/swift-collection-types-summary">SwiftCollection Types 정리</a></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[아이폰 개발</td>
+      <td>Swift 3 컬렉션 자료형 (Array, Dictionary, Set) : 네이버 블로그](https://m.blog.naver.com/PostView.nhn?blogId=jdub7138&amp;logNo=220924351499&amp;proxyReferer=https%3A%2F%2Fwww.google.com%2F)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://outofbedlam.github.io/swift/2016/03/26/Set/">스위프트 - 집합 (Set) · Out of Bedlam</a></p>
+
+        </div>
+
+        
+          <div class="page-share">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2019-05-10-Collection-type%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--facebook btn--small"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> <span>Share</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%20http%3A%2F%2Flocalhost%3A4000%2F2019-05-10-Collection-type%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--twitter btn--small"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> <span>Tweet</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2019-05-10-Collection-type%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--linkedin btn--small"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> <span>LinkedIn</span></a>
+  <a href="https://reddit.com/submit?title=&url=http%3A%2F%2Flocalhost%3A4000%2F2019-05-10-Collection-type%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--reddit btn--small"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i> <span>Reddit</span></a>
+</div>
+
+        
+
+        
+
+        <nav class="page-pagination" role="navigation">
+  
+
+  
+</nav>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="social-icons"><a class="social-icon" href="/atom.xml"><i class="fas fa-rss-square fa-2x" title="Feed"></i></a></div><div class="copyright">
+    
+      <p>&copy; 2019 My Awesome Site. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/mmistakes/so-simple-theme" rel="nofollow">So Simple</a>.</p>
+    
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+
+
+  </body>
+
+</html>

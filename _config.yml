@@ -19,7 +19,7 @@ locale: en-US
 title: "MSW"
 description: "min's swift world"
 baseurl: "/"
-url: "https://minkkkjoon.github.io/"
+url: "https://94mkj.github.io/"
 logo: "/images/swift.png"
 date_format: "%B %-d, %Y"
 read_time: # true
@@ -47,8 +47,8 @@ feed:
   path: atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
-# paginate: 10
-# paginate_path: /page:num/
+paginate: 10
+paginate_path: /page:num/
 
 # Search
 search_full_content: false # can have performance implications for large sites

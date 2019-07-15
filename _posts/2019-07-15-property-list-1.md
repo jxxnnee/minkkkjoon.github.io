@@ -12,7 +12,7 @@ tags:
   - Swift
   - Data
   - Propertylist
-  - UserDefaults
+  - UserDefault
 
 
 
@@ -22,7 +22,7 @@ tags:
 
 
 
-### 1.1 프로퍼티 리스트(Property List)란?
+## 1.1 프로퍼티 리스트(Property List)란?
 
 프로퍼티 리스트는 애플의 주요 소프트웨어 프레임워크에 이용되는 **객체 직렬화를 위한 XML 형식의 파일**이다. 
 
@@ -58,7 +58,7 @@ tags:
 
 
 
-하지만 이와 같은 각 타입의 문자열 데이터가 프로퍼티 리스트에 저장될 떄에는 모두 "문자열" 이라는 공통의 타입으로 추상화 된다. 정확히는 <string> 타입이지만 스위프트의 String 과는 이름만 같을 뿐, 의미적으로는 다른 타입이다.
+하지만 이와 같은 각 타입의 문자열 데이터가 프로퍼티 리스트에 저장될 떄에는 모두 "문자열" 이라는 공통의 타입으로 추상화 된다. 정확히는 &#60;string&#62;타입이지만 스위프트의 String 과는 이름만 같을 뿐, 의미적으로는 다른 타입이다.
 
 
 
@@ -84,7 +84,7 @@ String 타입의 값을 저장했더라도 이를 NSString 타입의 형태로 �
 
 <br>
 
-### 1.2 프로퍼티 리스트와 데이터 타입
+## 1.2 프로퍼티 리스트와 데이터 타입
 
 <br>
 
@@ -100,16 +100,24 @@ String 타입의 값을 저장했더라도 이를 NSString 타입의 형태로 �
 
 | <center>타입</center> | <center>XML 엘리먼트</center> | <center>스위프트</center> | <center>파운데이션</center> | <center>코어파운데이션</center> |
 | :-------------------: | :---------------------------- | :------------------------ | --------------------------- | ------------------------------- |
-|         배열          | <array>                       | **Array**                 | NSArray                     | CFArray                         |
-|       딕셔너리        | <dict>                        | **Dictionary**            | NSDictionary                | CFDictionary                    |
-|        문자열         | <string>                      | **String**                | NSString                    | CFString                        |
-|         날짜          | <date>                        | -                         | NSDate                      | CFDate                          |
-|        Base64         | <data>                        | -                         | NSData                      | CFData                          |
-|         정수          | <integer>                     | Int, UInt                 | NSNumber                    | CFNumber                        |
-|         실수          | <real>                        | Float, Double             | NSNumber                    | CFNumber                        |
-|        논리형         | <true/>,<false/>              | Bool                      | NSNumber                    | CFNumber                        |
+|         배열          | &#60;array&#62;               | **Array**                 | NSArray                     | CFArray                         |
+|       딕셔너리        | &#60;dict>                    | **Dictionary**            | NSDictionary                | CFDictionary                    |
+|        문자열         | &#60;string>                  | **String**                | NSString                    | CFString                        |
+|         날짜          | &#60;date>                    | -                         | NSDate                      | CFDate                          |
+|        *Base64        | &#60;data>                    | -                         | NSData                      | CFData                          |
+|         정수          | &#60;integer>                 | Int, UInt                 | NSNumber                    | CFNumber                        |
+|         실수          | &#60;real>                    | Float, Double             | NSNumber                    | CFNumber                        |
+|        논리형         | &#60;true/>,&#60;false/>      | Bool                      | NSNumber                    | CFNumber                        |
 
 *프로퍼티 리스트이 XML 엘리먼트와 데이터 타입*
+
+<br>
+
+> *Base 64 란? 
+>
+> 8비트로 된 바이너리 데이터를 문자 코드에 영향을 받지 않는 공통의 아스키 코드를 사영하여 일련의 문자열로 바꾸는 방식을 의미합니다. 가령 실행 파일이나 ZIP 파일 등은 텍스트 기반이 아니라 바이너리 데이터로 이루어지는데, 이를 Base64로 인코딩하면 어느 문자 코드를 사용하든지 동일하게 읽어들일 수 있습니다. 
+>
+> Base64로 인코딩된 문자열은 의미 없는 문자열들이 나열된 형태를 이루며, 디코딩 과정을 거쳐 원래의 데이터로 복구됩니다.
 
 <br>
 

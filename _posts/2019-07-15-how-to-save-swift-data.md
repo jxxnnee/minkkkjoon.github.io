@@ -34,7 +34,7 @@ tags:
 
 ### 1. 프로퍼티 리스트
 
-데이터의 복잡도와 특성에 따라 크게 세 가지로 나눌 수 있는데, 우선 키-값(Key - Value) 형태로 닪순화 할 수 있는 데이터의 저장에는 프로퍼티 리스트가 사용된다.
+데이터의 복잡도와 특성에 따라 크게 세 가지로 나눌 수 있는데, 우선 키-값(Key - Value) 형태로 단순화 할 수 있는 데이터의 저장에는 프로퍼티 리스트가 사용된다.
 
 개인 정보나 로그인 데이터, 환경 설정값을 저장해야 할 때가 대표적인 경우다.
 
@@ -42,7 +42,7 @@ tags:
 
 <br>
 
-![key-value-data](/images/key-value-data.jpeg)
+![key-value-data](/images/key-value-data.png)
 
 ------
 
@@ -62,7 +62,7 @@ tags:
 
 <br>
 
-![table-view-data](/images/table-view-data.jpeg)
+![table-view-data](/images/table-view-data.png)
 
 ------
 
@@ -84,7 +84,7 @@ tags:
 
 <br>
 
-![swift-save-data](/images/swift-save-data.jpeg)
+![swift-save-data](/images/swift-save-data.png)
 
 ------
 

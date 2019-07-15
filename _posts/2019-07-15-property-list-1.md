@@ -185,7 +185,9 @@ DTD 라는 키워드는 SGML이라는 문법을 사용하여 문서 텍스트의
 
 ## 1.3 프로퍼티 리스트 작성 실습
 
-STEP 01. 프로젝트 내비게이터에서 Chapter05-plist 폴더에 [마우스 우클릭] - [New File] 클릭 하여 Property List 파일을 추가한다. 파일 이름은 User.plist 로 했다.
+##### STEP 01. 
+
+프로젝트 내비게이터에서 Chapter05-plist 폴더에 [마우스 우클릭] - [New File] 클릭 하여 Property List 파일을 추가한다. 파일 이름은 User.plist 로 했다.
 
 ![plist-test-1-1](/images/plist-test-1-1.png)
 
@@ -197,7 +199,9 @@ STEP 01. 프로젝트 내비게이터에서 Chapter05-plist 폴더에 [마우스
 
 <br>
 
-STEP 02. 추가된 User.plist 파일을 클릭하여 선택한다. 다음과 같이 프로퍼티 툴로 User.plist 가 열리는 것을 확인한다.
+##### STEP 02. 
+
+추가된 User.plist 파일을 클릭하여 선택한다. 다음과 같이 프로퍼티 툴로 User.plist 가 열리는 것을 확인한다.
 
 ![plist-test-2](/images/plist-test-2.png)
 
@@ -217,7 +221,9 @@ STEP 03. 현재 User.plist 파일에는 아무런 내용도 없기 때문에 프
 
 <br>
 
-STEP 04. Root 노드 위에 마우스 포인터를 올리면 그림과 같이 (+) 아이콘이 나타난다. 이 아이콘은 하위 노드를 추가하는 버튼이다. Root는 프로퍼티 툴에서 최상위 노드를 의미하므로 오직 하위 노드만 추가 할 수 있다.
+##### STEP 04. 
+
+Root 노드 위에 마우스 포인터를 올리면 그림과 같이 (+) 아이콘이 나타난다. 이 아이콘은 하위 노드를 추가하는 버튼이다. Root는 프로퍼티 툴에서 최상위 노드를 의미하므로 오직 하위 노드만 추가 할 수 있다.
 
 ![plist-test-4](/images/plist-test-4.png)
 
@@ -227,7 +233,9 @@ STEP 04. Root 노드 위에 마우스 포인터를 올리면 그림과 같이 (+
 
 <br>
 
-STEP 05. 추가된 노드는 다음 그림과 같이 표시된다. 좌측부터 차례대로 항목명 - 타입 - 내용을 나타낸다. 각 항목을 클릭하면 편집할 수 있는 상태로 바뀐다.
+##### STEP 05. 
+
+추가된 노드는 다음 그림과 같이 표시된다. 좌측부터 차례대로 항목명 - 타입 - 내용을 나타낸다. 각 항목을 클릭하면 편집할 수 있는 상태로 바뀐다.
 
 ![plist-test-5](/images/plist-test-5.png)
 
@@ -237,7 +245,9 @@ STEP 05. 추가된 노드는 다음 그림과 같이 표시된다. 좌측부터 
 
 <br>
 
-STEP 06. 나이에 대한 Type 항목을 클릭하여 Number 타입으로 변경합니다. 실제로 작성된 XML을 열어보면 <integer&#62; 엘리먼트가 추가 되어 있다.
+##### STEP 06. 
+
+나이에 대한 Type 항목을 클릭하여 Number 타입으로 변경합니다. 실제로 작성된 XML을 열어보면 <integer&#62; 엘리먼트가 추가 되어 있다.
 
 ![plist-test-6](/images/plist-test-6.png)
 
@@ -247,7 +257,9 @@ STEP 06. 나이에 대한 Type 항목을 클릭하여 Number 타입으로 변경
 
 <br>
 
-STEP 07. 위와 같은 방식들로 나머지 정보까지 모두 직접 입력한다. 모든 값이 입력되고 난 후의 User.plist는 다음과 같다.
+##### STEP 07. 
+
+위와 같은 방식들로 나머지 정보까지 모두 직접 입력한다. 모든 값이 입력되고 난 후의 User.plist는 다음과 같다.
 
 ![plist-test-7](/images/plist-test-7.png)
 

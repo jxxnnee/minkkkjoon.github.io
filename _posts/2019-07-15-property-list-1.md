@@ -98,16 +98,16 @@ String 타입의 값을 저장했더라도 이를 NSString 타입의 형태로 �
 
 <br>
 
-| <center>타입</center> | <center>XML 엘리먼트</center> | <center>스위프트</center> | <center>파운데이션</center> | <center>코어파운데이션</center> |
-| :-------------------: | :---------------------------- | :------------------------ | --------------------------- | ------------------------------- |
-|         배열          | &#60;array&#62;               | **Array**                 | NSArray                     | CFArray                         |
-|       딕셔너리        | &#60;dict>                    | **Dictionary**            | NSDictionary                | CFDictionary                    |
-|        문자열         | &#60;string>                  | **String**                | NSString                    | CFString                        |
-|         날짜          | &#60;date>                    | -                         | NSDate                      | CFDate                          |
-|        *Base64        | &#60;data>                    | -                         | NSData                      | CFData                          |
-|         정수          | &#60;integer>                 | Int, UInt                 | NSNumber                    | CFNumber                        |
-|         실수          | &#60;real>                    | Float, Double             | NSNumber                    | CFNumber                        |
-|        논리형         | &#60;true/>,&#60;false/>      | Bool                      | NSNumber                    | CFNumber                        |
+|   타입   |       XML 엘리먼트       |   스위프트    |  파운데이션  | 코어파운데이션 |
+| :------: | :----------------------: | :-----------: | :----------: | :------------: |
+|   배열   |     &#60;array&#62;      |     Array     |   NSArray    |    CFArray     |
+| 딕셔너리 |        &#60;dict>        |  Dictionary   | NSDictionary |  CFDictionary  |
+|  문자열  |       &#60;string>       |    String     |   NSString   |    CFString    |
+|   날짜   |        &#60;date>        |       -       |    NSDate    |     CFDate     |
+| *Base64  |        &#60;data>        |       -       |    NSData    |     CFData     |
+|   정수   |      &#60;integer>       |   Int, UInt   |   NSNumber   |    CFNumber    |
+|   실수   |        &#60;real>        | Float, Double |   NSNumber   |    CFNumber    |
+|  논리형  | &#60;true/>,&#60;false/> |     Bool      |   NSNumber   |    CFNumber    |
 
 *프로퍼티 리스트이 XML 엘리먼트와 데이터 타입*
 

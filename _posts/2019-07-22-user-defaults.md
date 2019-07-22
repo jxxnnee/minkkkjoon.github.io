@@ -144,8 +144,6 @@ UserDefaults **객체는 인메모리 캐싱(In-memory Caching)** 매커니즘�
 
 ![table-cell-object](/images/table-cell-object.png){: width="50%"}
 
-------
-
 - 첫번 째 셀 : "이름" 레이블과 "민경준" 레이블
 - 두번 째 셀 : "성별" 레이블과 세그먼트 컨트롤
 - 세번 째 셀 : "결혼 여부" 레이블과 스위치 컨트롤
@@ -166,8 +164,6 @@ STEP 1.
 
 ![live-view-controller-2](/images/list-view-controller-2.png){: width="80%"}
 
-------
-
 <br>
 
 STEP 2.
@@ -177,8 +173,6 @@ STEP 2.
 ![connect-outlet-action-1](/images/connect-outlet-action-1.png)
 
 ![connect-outlet-action-2](/images/connect-outlet-action-2.png){: width="50%"}
-
-------
 
 <br>
 
@@ -196,8 +190,6 @@ ListViewController 클래스에 tableView(_:didSelectRowAt:) 메소드를 추가
 
 ![add-table-view](/images/add-table-view.png)
 
-------
-
 <br>
 
 STEP 2.
@@ -206,8 +198,6 @@ tableView(_:didSelectRowAt:) 메소드에 다음과 같은 내용을 작성한�
 
 ![edit-table-view](/images/edit-table-view.png){: width="80%"}
 
-------
-
 <br>
 
 여기서 .addTextField() 메서드의 $0 은 메서드의 원본에는 존재하는 매개변수 configurationHandler 의 값을, UIAlertAction(title:style:) 메서드의 (_) in 은 매개변수 handler 의 값을 클로저 방식으로 표현한것이다. 
@@ -215,8 +205,6 @@ tableView(_:didSelectRowAt:) 메소드에 다음과 같은 내용을 작성한�
 ![add-text-field](/images/add-text-field.png)
 
 ![ui-alert-action](/images/ui-alert-action.png)
-
-------
 
 <br>
 
@@ -258,15 +246,11 @@ tableView(_:didSelectRowAt:) 메소드의 비어 있는 버튼 액션에도 "nam
 
 ![edit-change-name](/images/edit-change-name.png)
 
-------
-
 <br>
 
 alert.textField?[0].text 에서 textField가 배열 방식인 이유는 UIAlertController 객체가 가질 수 있는 텍스트 필드의 개수가 하나 이상이기 때문이다. 또, textField 속성을 옵셔널 타입으로 정의되어 있는 이유는 alert 창에 입력폼이 하나도 없을 경우, textFields 속성은 기본 값으로 nil 값을 가지게 되기 때문이다.
 
 ![text-field-default-nil](/images/text-field-default-nil.png)
-
-------
 
 <br>
 
@@ -275,8 +259,6 @@ STEP 4.
 알림창의 버튼 액션 내부에 코드 한 줄을 추가 한다.
 
 ![add-text-value](/images/add-text-value.png)
-
-------
 
 
 
@@ -288,8 +270,6 @@ STEP 4.
 
 ![change-name-test-3](/images/change-name-test-3.png){: width="50%"}
 
-------
-
 <br>
 
 STEP 5.
@@ -297,8 +277,6 @@ STEP 5.
 ListViewController 클래스에 viewDidLoad 메소드를 구현하고, 다음과 같이 저장된 데이터를 불러오는 구문을 작성한다. 불러온 데이터는 각 컨트롤의 속성에 맞게 설정한다.
 
 ![add-view-did-load](/images/add-view-did-load.png)
-
-------
 
 <br>
 
@@ -311,8 +289,6 @@ STEP 6.
 ![change-object-test-2](/images/change-object-test-2.png)
 
 ![change-object-test-3](/images/change-object-test-3.png)
-
-------
 
 
 

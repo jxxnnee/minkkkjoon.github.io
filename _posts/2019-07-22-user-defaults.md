@@ -19,7 +19,7 @@ tags:
 
 ---
 
-
+<br>
 
 # 2.1 UserDefaults 란?
 
@@ -29,7 +29,7 @@ UserDefaults는 **런타임(Runtime) 환경에서 동작하는 객체**이다. �
 
 UserDefaults는 **싱글톤 패턴으로 설계**되어 있어 **딱 하나의 인스턴스만 생성**되며, 앱 전체가 이 하나의 인스턴스를 공유하여 사용하는 형태를 띈다. 따라서 UserDefaults를 사용할 때에는 직접 초기화 메소드를 호출하여 인스턴스를 생성하지 않고 이미 생성되어 있는 인스턴스를 참조하여 사용해야 한다.
 
-
+<br>
 
 ### 2.1.1 동시성 문제
 
@@ -132,7 +132,9 @@ UserDefaults **객체는 인메모리 캐싱(In-memory Caching)** 매커니즘�
 
 이 같은 상황을 방지하기 위해 캐싱된 데이터를 갱신하여 양쪽의 데이터를 일치시켜 주어야 한다. 이를 동기화 처리, 또는 싱크 처리 라고 부르고, 위 예제에서 사용된 syncronize() 메소드가 이 역할을 한다.
 
+<br>
 
+<br>
 
 # 2.2 UserDefaults를 사용한 데이터 저장 실습
 
@@ -148,11 +150,11 @@ UserDefaults **객체는 인메모리 캐싱(In-memory Caching)** 매커니즘�
 - 두번 째 셀 : "성별" 레이블과 세그먼트 컨트롤
 - 세번 째 셀 : "결혼 여부" 레이블과 스위치 컨트롤
 
-
+<br>
 
 ### 2.2.1 기본 코드 및 아웃렛 변수, 액션 메소드 구현하기
 
-
+<br>
 
 STEP 1. 
 
@@ -164,15 +166,15 @@ STEP 1.
 
 ------
 
-
+<br>
 
 STEP 2.
 
 각 컨트롤에 아웃렛 변수 및 액션 메소드를 연결한다.
 
-![connect-outlet-action-1](/images/connect-outlet-action—1.png)
+![connect-outlet-action-1](/images/connect-outlet-action-1.png)
 
-![connect-outlet-action-2](/images/connect-outlet-action—2.png)
+![connect-outlet-action-2](/images/connect-outlet-action-2.png)
 
 ------
 
@@ -180,7 +182,7 @@ STEP 2.
 
 ### 2.2.2 이름 편집 기능 구현
 
-
+<br>
 
 STEP 1.
 
@@ -192,7 +194,7 @@ ListViewController 클래스에 tableView(_:didSelectRowAt:) 메소드를 추가
 
 ------
 
-
+<br>
 
 STEP 2.
 
@@ -202,7 +204,7 @@ tableView(_:didSelectRowAt:) 메소드에 다음과 같은 내용을 작성한�
 
 ------
 
-
+<br>
 
 여기서 .addTextField() 메서드의 $0 은 메서드의 원본에는 존재하는 매개변수 configurationHandler 의 값을, UIAlertAction(title:style:) 메서드의 (_) in 은 매개변수 handler 의 값을 클로저 방식으로 표현한것이다. 
 
@@ -212,7 +214,7 @@ tableView(_:didSelectRowAt:) 메소드에 다음과 같은 내용을 작성한�
 
 ------
 
-
+<br>
 
 클로저에 관한 내용은 아래의 링크를 참고하는것이 좋다.
 
@@ -226,7 +228,7 @@ tableView(_:didSelectRowAt:) 메소드에 다음과 같은 내용을 작성한�
 
 
 
-STEP 1.
+<br>STEP 1.
 
 changeGender(_:) 에 "gender"를 키로 하는 데이터 저장 구문을 작성한다.
 
@@ -234,7 +236,7 @@ changeGender(_:) 에 "gender"를 키로 하는 데이터 저장 구문을 작성
 
 ------
 
-
+<br>
 
 STEP 2.
 
@@ -244,7 +246,7 @@ changeMarried(_:) 메소드도 동일한 방식으로 "married"를 키로 하는
 
 ------
 
-
+<br>
 
 STEP 3. 
 
@@ -254,7 +256,7 @@ tableView(_:didSelectRowAt:) 메소드의 비어 있는 버튼 액션에도 "nam
 
 ------
 
-
+<br>
 
 alert.textField?[0].text 에서 textField가 배열 방식인 이유는 UIAlertController 객체가 가질 수 있는 텍스트 필드의 개수가 하나 이상이기 때문이다. 또, textField 속성을 옵셔널 타입으로 정의되어 있는 이유는 alert 창에 입력폼이 하나도 없을 경우, textFields 속성은 기본 값으로 nil 값을 가지게 되기 때문이다.
 
@@ -262,7 +264,7 @@ alert.textField?[0].text 에서 textField가 배열 방식인 이유는 UIAlertC
 
 ------
 
-
+<br>
 
 STEP 4.
 
@@ -274,7 +276,7 @@ STEP 4.
 
 
 
-다음과 같이 작동하는 것을 확인 할 수 있다.
+<br>다음과 같이 작동하는 것을 확인 할 수 있다.
 
 ![change-name-test-1](/images/change-name-test-1.png)
 
@@ -284,7 +286,7 @@ STEP 4.
 
 ------
 
-
+<br>
 
 STEP 5.
 
@@ -294,7 +296,7 @@ ListViewController 클래스에 viewDidLoad 메소드를 구현하고, 다음과
 
 ------
 
-
+<br>
 
 STEP 6.
 

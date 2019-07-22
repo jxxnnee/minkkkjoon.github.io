@@ -222,7 +222,9 @@ tableView(_:didSelectRowAt:) 메소드에 다음과 같은 내용을 작성한�
 
 클로저에 관한 내용은 아래의 링크를 참고하는것이 좋다.
 
-[Swift 클로저 및 고차 함수 이해하기]: https://academy.realm.io/kr/posts/closure-and-higher-order-functions-of-swift/
+[Swift의 클로저 및 고차 함수 이해하기]: https://academy.realm.io/kr/posts/closure-and-higher-order-functions-of-swift/	"Swift의 클로저 및 고차 함수 이해하기"
+
+https://academy.realm.io/kr/posts/closure-and-higher-order-functions-of-swift/ 
 
 <br>
 

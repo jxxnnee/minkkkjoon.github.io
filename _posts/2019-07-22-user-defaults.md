@@ -152,6 +152,8 @@ UserDefaults **객체는 인메모리 캐싱(In-memory Caching)** 매커니즘�
 
 <br>
 
+<br>
+
 ### 2.2.1 기본 코드 및 아웃렛 변수, 액션 메소드 구현하기
 
 <br>
@@ -177,6 +179,8 @@ STEP 2.
 ![connect-outlet-action-2](/images/connect-outlet-action-2.png)
 
 ------
+
+<br>
 
 <br>
 
@@ -219,6 +223,8 @@ tableView(_:didSelectRowAt:) 메소드에 다음과 같은 내용을 작성한�
 클로저에 관한 내용은 아래의 링크를 참고하는것이 좋다.
 
 [Swift 클로저 및 고차 함수 이해하기]: https://academy.realm.io/kr/posts/closure-and-higher-order-functions-of-swift/
+
+<br>
 
 <br>
 

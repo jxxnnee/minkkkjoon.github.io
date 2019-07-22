@@ -142,7 +142,7 @@ UserDefaults **객체는 인메모리 캐싱(In-memory Caching)** 매커니즘�
 
 다음 그림을 참고하여 각 테이블 셀들을 구성하자.
 
-![table-cell-object](/images/table-cell-object.png)
+![table-cell-object](/images/table-cell-object.png){: width="50%"}
 
 ------
 
@@ -162,9 +162,9 @@ STEP 1.
 
 커스텀 클래스인 ListViewController 를 만들어 사용자 정보 화면과 연결 시킨다.
 
-![live-view-controller-1](/images/list-view-controller-1.png)
+![live-view-controller-1](/images/list-view-controller-1.png){: width="50%"}
 
-![live-view-controller-2](/images/list-view-controller-2.png)
+![live-view-controller-2](/images/list-view-controller-2.png){: width="80%"}
 
 ------
 
@@ -176,7 +176,7 @@ STEP 2.
 
 ![connect-outlet-action-1](/images/connect-outlet-action-1.png)
 
-![connect-outlet-action-2](/images/connect-outlet-action-2.png)
+![connect-outlet-action-2](/images/connect-outlet-action-2.png){: width="50%"}
 
 ------
 
@@ -204,7 +204,7 @@ STEP 2.
 
 tableView(_:didSelectRowAt:) 메소드에 다음과 같은 내용을 작성한다.
 
-![edit-table-view](/images/edit-table-view.png)
+![edit-table-view](/images/edit-table-view.png){: width="80%"}
 
 ------
 
@@ -240,9 +240,7 @@ https://academy.realm.io/kr/posts/closure-and-higher-order-functions-of-swift/
 
 changeGender(_:) 에 "gender"를 키로 하는 데이터 저장 구문을 작성한다.
 
-![edit-change-gender](/images/edit-change-gender.png)
-
-------
+![edit-change-gender](/images/edit-change-gender.png){: width="50%"}
 
 <br>
 
@@ -250,9 +248,7 @@ STEP 2.
 
 changeMarried(_:) 메소드도 동일한 방식으로 "married"를 키로 하는 데이터 저장 구문을 작성한다.
 
-![edit-change-married](/images/edit-change-married.png)
-
-------
+![edit-change-married](/images/edit-change-married.png){: width="50%"}
 
 <br>
 
@@ -286,11 +282,11 @@ STEP 4.
 
 <br>다음과 같이 작동하는 것을 확인 할 수 있다.
 
-![change-name-test-1](/images/change-name-test-1.png)
+![change-name-test-1](/images/change-name-test-1.png){: width="50%"}
 
-![change-name-test-2](/images/change-name-test-2.png)
+![change-name-test-2](/images/change-name-test-2.png){: width="50%"}
 
-![change-name-test-3](/images/change-name-test-3.png)
+![change-name-test-3](/images/change-name-test-3.png){: width="50%"}
 
 ------
 

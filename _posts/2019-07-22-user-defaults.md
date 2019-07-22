@@ -228,7 +228,7 @@ https://academy.realm.io/kr/posts/closure-and-higher-order-functions-of-swift/
 
 changeGender(_:) 에 "gender"를 키로 하는 데이터 저장 구문을 작성한다.
 
-![edit-change-gender](/images/edit-change-gender.png){: width="50%"}
+![edit-change-gender](/images/edit-change-gender.png){: width="80%"}
 
 <br>
 
@@ -236,7 +236,7 @@ STEP 2.
 
 changeMarried(_:) 메소드도 동일한 방식으로 "married"를 키로 하는 데이터 저장 구문을 작성한다.
 
-![edit-change-married](/images/edit-change-married.png){: width="50%"}
+![edit-change-married](/images/edit-change-married.png){: width="80%"}
 
 <br>
 
@@ -244,7 +244,7 @@ STEP 3.
 
 tableView(_:didSelectRowAt:) 메소드의 비어 있는 버튼 액션에도 "name" 을 키로 하여 값을 저장하는 구문을 작성한다.
 
-![edit-change-name](/images/edit-change-name.png)
+![edit-change-name](/images/edit-change-name.png){: width="80%"}
 
 <br>
 
@@ -284,11 +284,11 @@ STEP 6.
 
 값을 변경 후 앱을 종료하고 다시 실행 했을 때 값이 유지가 되는지 확인한다.
 
-![change-object-test-1](/images/change-object-test-1.png)
+![change-object-test-1](/images/change-object-test-1.png){: width="50%"}
 
-![change-object-test-2](/images/change-object-test-2.png)
+![change-object-test-2](/images/change-object-test-2.png){: width="50%"}
 
-![change-object-test-3](/images/change-object-test-3.png)
+![change-object-test-3](/images/change-object-test-3.png){: width="50%"}
 
 
 

@@ -153,7 +153,7 @@ This will allow you to customize a human-readable representation of the Stack th
 
 <br>
 
-###push and pop operations
+#push and pop operations
 
 <br>
 

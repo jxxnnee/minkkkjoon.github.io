@@ -151,9 +151,9 @@ This will allow you to customize a human-readable representation of the Stack th
 
 <br>
 
-# ㅇㅇ
+<br>
 
-##push and pop operations
+## Push and Pop Operations
 
 <br>
 
@@ -214,9 +214,9 @@ push and pop both have a O(1) time complexity.
 
 <br>
 
-ㅇㅇ
+<br>
 
-##Non-essential operations
+## Non-essential Operations
 
 <br>
 
@@ -240,9 +240,9 @@ peek is an operation that is often attributed to the stack interface. The idea o
 
 <br>
 
-ㅇㅇ
+<br>
 
-##Less is More
+## Less is More
 
 <br>
 
@@ -352,7 +352,10 @@ Stacks are crucial to problems that search trees and graphs. Imagine finding you
 Each time you come to a decision point of left, right or straight, you can push all possible decisions onto your stack. When you hit a dead end, simply backtrack by popping from the stack and continuing until you escape or hit another dead end.
 
 <br>
-##Key points
+
+<br>
+
+## Key Points
 
 **• 스택은 LIFO(last-in first-out) 유형의 데이터 구조이다.**
 
@@ -373,7 +376,7 @@ Each time you come to a decision point of left, right or straight, you can push 
 
 <br>
 
-#####1. Collection Protocol 
+#### 1. Collection protocol
 
 Collection은 일반적인 “집합 컨테이너”를 묘사하는 프로토콜인데, 실질적으로는 Sequence 프로토콜을 상속하면서 한 가지 개념(기능)을 추가한 것으로 이해할 수 있다. 그것은 임의의 인덱스를 통해서 개별 원소를 액세스할 수 있는 점이다. 따라서 Sequence와 달리 여러번이고 순회할 수 있고, 순회 시 내부 자료가 소모되지 않는다.
 
@@ -383,7 +386,7 @@ Collection 내의 모든 원소는 집합 구조 내에서 자신의 위치를 �
 
 <br>
 
-#####2. Initializer
+#### 2. Initializer
 
 Initialize는 초기화라는 뜻이다. 여기서 초기화는 모두 0 값으로 보내버리는 그런 초기화가 아니고 **변수나 상수의 초기값을 정해준다**는 의미이다. 
 
@@ -391,7 +394,7 @@ Initialize는 초기화라는 뜻이다. 여기서 초기화는 모두 0 값으�
 
 <br>
 
-#####3. Array Literal
+#### 3. Array Literal
 
 여기서 리터럴은 어떠한 값을 명칭하는 것이 아니라 변수 및 상수에 저장되는 **'값 자체'**를 일컫는 말이다. 정수 리터럴, 문자열 리터럴, 배열 리터럴 등.. 언어의 한 요소로서 리터럴이라고 불린다.
 

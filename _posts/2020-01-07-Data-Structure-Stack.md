@@ -2,9 +2,10 @@
 
 ## 1. Stack (스택)
 
+<br>
 **스택은 어디에나 있다. 쌓을 수 있는 것들을 몇 가지 예를 들어보자**
 
-**• 팬 케이크**<br>
+**• 팬 케이크**
 
 **• 책**
 
@@ -12,12 +13,11 @@
 
 **• 현금**
 
-
-
 **스택의 데이터 구조는 개념상 물체의 물리적 스택과 동일하다.**
 **스택에 항목을 추가 할 때는 항상 맨 위에, 제거할 때도 항상 최상위 항목을 제거한다.**
 
 Stacks are everywhere. Here are some common examples of things you would stack:
+
 • pancakes
 
 • books
@@ -26,14 +26,20 @@ Stacks are everywhere. Here are some common examples of things you would stack:
 
 • cash
 
-
-
 The stack data structure is identical, in concept, to a physical stack of objects. 
+
 When you add an item to a stack, you place it on top of the stack. 
+
 When you remove an item from a stack, you always remove the top-most item.
 
+
+
 <br>
+
 ### Stack operations
+
+<br>
+
 **스택은 유용하고 간단하다. 스택 구축의 주요 목표는 데이터에 어떻게 엑세스할지 정하는 것이다. 
 Linked list 개념을 익히는데 어려움을 겪었다면, 스택이 비교적 사소함을 알게 되어 기쁠것이다.**
 
@@ -41,25 +47,21 @@ Stacks are useful, and also exceedingly simple.
 The main goal of building a stack is to enforce how you access your data. 
 If you had a tough time with the linked list concepts, you’ll be glad to know that stacks are comparatively trivial.
 
+<br>
+
 **스택에 필요한 작업은 두 가지 뿐이다 :**
-
-
 
 **• push : 스택의 최상위 요소 추가**
 
 **• pop : 스택의 최상위 요소 제거**
 
-
-
 There are only two essential operations for a stack:
-
-
 
 • push: Adding an element to the top of the stack.
 
 • pop: Removing the top element of the stack.
 
-
+<br>
 
 **즉, 데이터 구조의 한쪽 부분에서만 데이터를 추가하고 제거할 수 있다는 뜻이다.
 컴퓨터 과학에서 스택은 LIFO(last-in first-out) 데이터 구조로 알려져 있다.
@@ -68,9 +70,9 @@ There are only two essential operations for a stack:
 This means that you can only add or remove elements from one side of the data structure. 
 In computer science, a stack is known as a LIFO (last-in first-out) data structure. Elements that are pushed in last are the first ones to be popped out.
 
+<br>
+
 **스택은 프로그래밍의 모든 분야에서 두드러지게 사용된다. 몇 개 나열하자면**
-
-
 
 **• iOS는 네이게이션 스택(pop and push)을 사용하여 뷰 컨트롤러를 화면에 띄우거나 제거한다.**
 
@@ -78,12 +80,8 @@ In computer science, a stack is known as a LIFO (last-in first-out) data structu
 
 **• 미로를 빠져나온 경로를 탐색하는 알고리즘 같은 것에 숙달된다면 스택을 사용하여 역추적 하는것이 가능하다.**
 
-
-
 Stacks are used prominently in all disciplines of programming. 
 To list a few:
-
-
 
 • iOS uses the navigation stack to push and pop view controllers into and out of view.
 
@@ -91,10 +89,13 @@ To list a few:
 
 • Search and conquer algorithms, such as finding a path out of a maze, use stacks to facilitate backtracking.
 
+
+
 <br>
+
 ### Implementation
 
-
+<br>
 
 **Stack.swift 라는 이름의 Playground를 생성하여 다음 내용을 입력하자.** 
 
@@ -128,6 +129,8 @@ Here, you’ve defined the backing storage of your Stack. Choosing the right sto
 
 The array is an obvious choice, since it offers constant time insertions and deletions at one end via append and popLast. Usage of these two operations will facilitate the LIFO nature of stacks.
 
+<br>
+
 **CustomStringConvertible의 고급 기능 호출 체인에 대해서는 세 가지 일을 하고 있다.**
 
 1. **저장소를 통해 요소를 문자열에 매핑하는 배열 생성. map { "\\($0)" }**
@@ -146,11 +149,13 @@ You separate the elements of the array using the newline character "\n".
 
 This will allow you to customize a human-readable representation of the Stack that you’ll be using.
 
+
+
 <br>
 
 ###push and pop operations
 
-
+<br>
 
 **Stack 구조체에 다음 코드를 추가한다.**
 
@@ -190,7 +195,7 @@ example(of: "using a stack") {
 **실행해보면 다음과 같은 결과를 얻을 수 있다.**
 
 You should see the following output:
-```swift
+```
 ---Example of using a stack---
 ----top----
 4
@@ -205,11 +210,15 @@ Popped: 4
 
 push and pop both have a O(1) time complexity.
 
+
+
 <br>
+
+
 
 ###Non-essential operations
 
-
+<br>
 
 **스택을 좀 더 편하게 해주는 두 가지의 작업이 있다. 다음 코드를 추가하자.**
 
@@ -230,9 +239,12 @@ public var isEmpty: Bool {
 peek is an operation that is often attributed to the stack interface. The idea of peek is to look at the top element of the stack without mutating its contents.
 
 <br>
+
+
+
 ###Less is More
 
-
+<br>
 
 **스택에 Swift Collection Protocol을 적용할 수 있는지 궁금할 수 있다.** 
 
@@ -241,8 +253,6 @@ peek is an operation that is often attributed to the stack interface. The idea o
 **이 경우에는 적을 수록 더 좋다!** 
 
 **액세스 순서가 보장되도록 기존 배열을 가져와 스택으로 변환하는 것이 좋을 수 있다. 물론 배열 요소를 loop 하거나 각 요소를 push 할 수 있다.**
-
-
 
 You may have wondered if you could adopt the Swift collection protocols for the stack. 
 
@@ -254,7 +264,7 @@ You might want to take an existing array and convert it to a stack so that the a
 
 
 
-
+<br>
 
 **그러나 기본적인 프라이빗 스토리지를 설정하는 Initializer를 작성할 수 있으므로 Stack 구현사항에 다음 코드를 추가한다.**
 
@@ -265,7 +275,7 @@ public init(_ elements: [Element]) {
 	storage = elements
 }
 ```
-
+<br>
 
 **이제, 이 example을 메인 playgrounddp 추가한다.**
 
@@ -292,7 +302,7 @@ This code creates a stack of strings and pops the top element "D".
 
 Notice that the Swift compiler can type infer the element type from the array so you can use Stack instead of the more verbose StackStack&#60;String&#62;.
 
-
+<br>
 
 **한 단계 더 나아가서 배열 리터럴에 초기화 가능한 스택을 만들 수 있다.**
 **다음 코드를 Stack 구현에 추가하자.**
@@ -308,7 +318,7 @@ extension Stack: ExpressibleByArrayLiteral {
 }
 ```
 
-
+<br>
 
 **이제, 메인 Playgroud로 돌아가서 다음 코드를 추가하자.**
 
@@ -331,7 +341,7 @@ example(of: "initializing a stack from an array literal") {
 This creates a stack of Doubles and pops the top value 4.0. 
 Again, type inference saves you from having to type the more verbose StackStack&#60;Double&#62;
 
-
+<br>
 
 **Stack은 Tree와 Graph를 검색하는 문제에 매우 중요하다. 미로를 통해 길을 찾는다고 상상해보자.**
 
@@ -350,8 +360,6 @@ Each time you come to a decision point of left, right or straight, you can push 
 
 **• 스택에 필요한 두 가지 필수 작업은 요소를 추가하는 Push와 요소를 제거하는 Pop 뿐이다.**
 
-
-
 • A stack is a LIFO, last-in first-out, data structure.
 
 • Despite being so simple, the stack is a key data structure for many problems.
@@ -360,7 +368,10 @@ Each time you come to a decision point of left, right or straight, you can push 
 
 <br>
 <br>
+
 ### 더 알아보자
+
+<br>
 
 #####1. Collection Protocol 
 
@@ -370,7 +381,7 @@ Collection 내의 모든 원소는 집합 구조 내에서 자신의 위치를 �
 
 https://soooprmx.com/archives/7049
 
-
+<br>
 
 #####2. Initializer
 
@@ -378,7 +389,7 @@ Initialize는 초기화라는 뜻이다. 여기서 초기화는 모두 0 값으�
 
 https://m.blog.naver.com/jdub7138/220379745883
 
-
+<br>
 
 #####3. Array Literal
 

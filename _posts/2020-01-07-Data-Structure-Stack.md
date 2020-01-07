@@ -1,6 +1,4 @@
-# Data Structures (자료 구조)
-
-## 1. Stack (스택)
+# 1. Stack (스택)
 
 <br>
 **스택은 어디에나 있다. 쌓을 수 있는 것들을 몇 가지 예를 들어보자**
@@ -36,7 +34,7 @@ When you remove an item from a stack, you always remove the top-most item.
 
 <br>
 
-### Stack operations
+## Stack operations
 
 <br>
 
@@ -93,7 +91,7 @@ To list a few:
 
 <br>
 
-### Implementation
+## Implementation
 
 <br>
 
@@ -153,7 +151,7 @@ This will allow you to customize a human-readable representation of the Stack th
 
 <br>
 
-#push and pop operations
+##push and pop operations
 
 <br>
 
@@ -216,7 +214,7 @@ push and pop both have a O(1) time complexity.
 
 
 
-###Non-essential operations
+##Non-essential operations
 
 <br>
 
@@ -242,7 +240,7 @@ peek is an operation that is often attributed to the stack interface. The idea o
 
 
 
-###Less is More
+##Less is More
 
 <br>
 
@@ -352,7 +350,7 @@ Stacks are crucial to problems that search trees and graphs. Imagine finding you
 Each time you come to a decision point of left, right or straight, you can push all possible decisions onto your stack. When you hit a dead end, simply backtrack by popping from the stack and continuing until you escape or hit another dead end.
 
 <br>
-###Key points
+##Key points
 
 **• 스택은 LIFO(last-in first-out) 유형의 데이터 구조이다.**
 
@@ -369,7 +367,7 @@ Each time you come to a decision point of left, right or straight, you can push 
 <br>
 <br>
 
-### 더 알아보자
+## 더 알아보자
 
 <br>
 

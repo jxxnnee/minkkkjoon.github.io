@@ -5,18 +5,28 @@
 **스택은 어디에나 있다. 쌓을 수 있는 것들을 몇 가지 예를 들어보자**
 
 **• 팬 케이크**
+
 **• 책**
+
 **• 종이**
+
 **• 현금**
+
+
 
 **스택의 데이터 구조는 개념상 물체의 물리적 스택과 동일하다.**
 **스택에 항목을 추가 할 때는 항상 맨 위에, 제거할 때도 항상 최상위 항목을 제거한다.**
 
 Stacks are everywhere. Here are some common examples of things you would stack:
 • pancakes
+
 • books
+
 • paper
+
 • cash
+
+
 
 The stack data structure is identical, in concept, to a physical stack of objects. 
 When you add an item to a stack, you place it on top of the stack. 
@@ -33,13 +43,23 @@ If you had a tough time with the linked list concepts, you’ll be glad to know 
 
 **스택에 필요한 작업은 두 가지 뿐이다 :**
 
+
+
 **• push : 스택의 최상위 요소 추가**
+
 **• pop : 스택의 최상위 요소 제거**
+
+
 
 There are only two essential operations for a stack:
 
+
+
 • push: Adding an element to the top of the stack.
+
 • pop: Removing the top element of the stack.
+
+
 
 **즉, 데이터 구조의 한쪽 부분에서만 데이터를 추가하고 제거할 수 있다는 뜻이다.
 컴퓨터 과학에서 스택은 LIFO(last-in first-out) 데이터 구조로 알려져 있다.
@@ -48,18 +68,27 @@ There are only two essential operations for a stack:
 This means that you can only add or remove elements from one side of the data structure. 
 In computer science, a stack is known as a LIFO (last-in first-out) data structure. Elements that are pushed in last are the first ones to be popped out.
 
-
 **스택은 프로그래밍의 모든 분야에서 두드러지게 사용된다. 몇 개 나열하자면**
 
+
+
 **• iOS는 네이게이션 스택(pop and push)을 사용하여 뷰 컨트롤러를 화면에 띄우거나 제거한다.**
+
 **• 아키텍쳐 수준에서 스택을 사용하여 메모리를 할당한다. 로컬 변수에 대한 메모리도 스택을 사용하여 관리한다.**
+
 **• 미로를 빠져나온 경로를 탐색하는 알고리즘 같은 것에 숙달된다면 스택을 사용하여 역추적 하는것이 가능하다.**
+
+
 
 Stacks are used prominently in all disciplines of programming. 
 To list a few:
 
+
+
 • iOS uses the navigation stack to push and pop view controllers into and out of view.
+
 • Memory allocation uses stacks at the architectural level. Memory for local variables is also managed using a stack.
+
 • Search and conquer algorithms, such as finding a path out of a maze, use stacks to facilitate backtracking.
 
 <br>
@@ -101,10 +130,10 @@ The array is an obvious choice, since it offers constant time insertions and del
 
 **CustomStringConvertible의 고급 기능 호출 체인에 대해서는 세 가지 일을 하고 있다.**
 
-1. 저장소를 통해 요소를 문자열에 매핑하는 배열 생성. map { "\\($0)" }
-2. reverse()를 사용하여 이전 배열을 반전시키는 새로운 배열을 생성한다.
-3. join(separator:)을 사용하여 배열을 문자열로 평평하게 한다.
-("\n"을 사용하여 배열 요소를 한줄로 세운다.)
+1. **저장소를 통해 요소를 문자열에 매핑하는 배열 생성. map { "\\($0)" }**
+2. **reverse()를 사용하여 이전 배열을 반전시키는 새로운 배열을 생성한다.**
+3. **join(separator:)을 사용하여 배열을 문자열로 평평하게 한다.**
+**("\n"을 사용하여 배열 요소를 한줄로 세운다.)**
 
 > CustomStringConvertible은 문자열을 커스터마이징 할 때 사용하는 프로토콜이다.
 > 필수 함수로 description: String { get }을 사용하고 있다.
@@ -116,7 +145,9 @@ For the fancy chain of function calls in CustomStringConvertible, you are doing 
 You separate the elements of the array using the newline character "\n".
 
 This will allow you to customize a human-readable representation of the Stack that you’ll be using.
+
 <br>
+
 ###push and pop operations
 
 
@@ -313,12 +344,18 @@ Each time you come to a decision point of left, right or straight, you can push 
 <br>
 ###Key points
 
-• 스택은 LIFO(last-in first-out) 유형의 데이터 구조이다.
-• 매우 단순함에도 불구하고 많은 문제에 대한 핵심 데이터 구조이다.
-• 스택에 필요한 두 가지 필수 작업은 요소를 추가하는 Push와 요소를 제거하는 Pop 뿐이다.
+**• 스택은 LIFO(last-in first-out) 유형의 데이터 구조이다.**
+
+**• 매우 단순함에도 불구하고 많은 문제에 대한 핵심 데이터 구조이다.**
+
+**• 스택에 필요한 두 가지 필수 작업은 요소를 추가하는 Push와 요소를 제거하는 Pop 뿐이다.**
+
+
 
 • A stack is a LIFO, last-in first-out, data structure.
+
 • Despite being so simple, the stack is a key data structure for many problems.
+
 • The only two essential operations for the stack are the push method for adding elements and the pop method for removing elements.
 
 <br>

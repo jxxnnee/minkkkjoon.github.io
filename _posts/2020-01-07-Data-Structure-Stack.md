@@ -2,17 +2,15 @@
 
 ## 1. Stack (스택)
 
-**
-스택은 어디에나 있다. 쌓을 수 있는 것들을 몇 가지 예를 들어보자
-• 팬 케이크
-• 책
-• 종이
-• 현금
-**
-**
-스택의 데이터 구조는 개념상 물체의 물리적 스택과 동일하다.
-스택에 항목을 추가 할 때는 항상 맨 위에, 제거할 때도 항상 최상위 항목을 제거한다.
-**
+**스택은 어디에나 있다. 쌓을 수 있는 것들을 몇 가지 예를 들어보자**
+
+**• 팬 케이크**
+**• 책**
+**• 종이**
+**• 현금**
+
+**스택의 데이터 구조는 개념상 물체의 물리적 스택과 동일하다.**
+**스택에 항목을 추가 할 때는 항상 맨 위에, 제거할 때도 항상 최상위 항목을 제거한다.**
 
 Stacks are everywhere. Here are some common examples of things you would stack:
 • pancakes
@@ -32,12 +30,11 @@ Linked list 개념을 익히는데 어려움을 겪었다면, 스택이 비교�
 Stacks are useful, and also exceedingly simple. 
 The main goal of building a stack is to enforce how you access your data. 
 If you had a tough time with the linked list concepts, you’ll be glad to know that stacks are comparatively trivial.
-**
-스택에 필요한 작업은 두 가지 뿐이다 :
-**
-**
-• push : 스택의 최상위 요소 추가
-• pop : 스택의 최상위 요소 제거**
+
+**스택에 필요한 작업은 두 가지 뿐이다 :**
+
+**• push : 스택의 최상위 요소 추가**
+**• pop : 스택의 최상위 요소 제거**
 
 There are only two essential operations for a stack:
 
@@ -51,14 +48,12 @@ There are only two essential operations for a stack:
 This means that you can only add or remove elements from one side of the data structure. 
 In computer science, a stack is known as a LIFO (last-in first-out) data structure. Elements that are pushed in last are the first ones to be popped out.
 
-**
-스택은 프로그래밍의 모든 분야에서 두드러지게 사용된다. 몇 개 나열하자면
-**
-**
-• iOS는 네이게이션 스택(pop and push)을 사용하여 뷰 컨트롤러를 화면에 띄우거나 제거한다.
-• 아키텍쳐 수준에서 스택을 사용하여 메모리를 할당한다. 로컬 변수에 대한 메모리도 스택을 사용하여 관리한다.
-• 미로를 빠져나온 경로를 탐색하는 알고리즘 같은 것에 숙달된다면 스택을 사용하여 역추적 하는것이 가능하다.
-**
+
+**스택은 프로그래밍의 모든 분야에서 두드러지게 사용된다. 몇 개 나열하자면**
+
+**• iOS는 네이게이션 스택(pop and push)을 사용하여 뷰 컨트롤러를 화면에 띄우거나 제거한다.**
+**• 아키텍쳐 수준에서 스택을 사용하여 메모리를 할당한다. 로컬 변수에 대한 메모리도 스택을 사용하여 관리한다.**
+**• 미로를 빠져나온 경로를 탐색하는 알고리즘 같은 것에 숙달된다면 스택을 사용하여 역추적 하는것이 가능하다.**
 
 Stacks are used prominently in all disciplines of programming. 
 To list a few:
@@ -70,7 +65,9 @@ To list a few:
 <br>
 ### Implementation
 
-Stack.swift 라는 이름의 Playground를 생성하여 다음 내용을 입력하자. 
+
+
+**Stack.swift 라는 이름의 Playground를 생성하여 다음 내용을 입력하자.** 
 
 ```swift
 public struct Stack<Element> {
@@ -91,6 +88,8 @@ extension Stack: CustomStringConvertible {
     }
 }
 ```
+
+<br>
 
 **여기서는 스택의 백업 저장소를 정의했다. 스택에 맞는 스토리지 유형을 선택하는 것이 중요하다.**
 
@@ -121,6 +120,7 @@ This will allow you to customize a human-readable representation of the Stack th
 ###push and pop operations
 
 
+
 **Stack 구조체에 다음 코드를 추가한다.**
 
 Add the following two operations to your Stack:
@@ -133,6 +133,8 @@ public mutating func pop() -> Element? {
 	return storage.popLast()
 }
 ```
+
+
 
 **그리고 다음 코드를 가장 아래에 추가한다.**
 
@@ -171,8 +173,12 @@ Popped: 4
 **Push와 Pop 둘 다 O(1)의 시간 복잡성을 가진다.**
 
 push and pop both have a O(1) time complexity.
+
 <br>
+
 ###Non-essential operations
+
+
 
 **스택을 좀 더 편하게 해주는 두 가지의 작업이 있다. 다음 코드를 추가하자.**
 
@@ -186,6 +192,8 @@ public var isEmpty: Bool {
 	return peek() == nil
 }
 ```
+<br>
+
 **peek은 흔히 말하는 스택 인터페이스 작업이다. 엿보자는 생각은 내용물을 변형시키지 않고 스택의 최상위 요소를 살펴보는 것이다.**
 
 peek is an operation that is often attributed to the stack interface. The idea of peek is to look at the top element of the stack without mutating its contents.
@@ -193,13 +201,17 @@ peek is an operation that is often attributed to the stack interface. The idea o
 <br>
 ###Less is More
 
-**스택에 Swift Collection Protocol을 적용할 수 있는지 궁금할 수 있다. **
+
+
+**스택에 Swift Collection Protocol을 적용할 수 있는지 궁금할 수 있다.** 
 
 **스택의 목적은 데이터에 접근하는 경우의 수를 제한하는 것이며, Collection과 같은 프로토콜을 채택하는 것은 반복자와 구독을 통해 모든 Element를 노출시킴으로써 이 목표에 어긋나게 될것이다.**
 
-**이 경우에는 적을 수록 더 좋다! **
+**이 경우에는 적을 수록 더 좋다!** 
 
 **액세스 순서가 보장되도록 기존 배열을 가져와 스택으로 변환하는 것이 좋을 수 있다. 물론 배열 요소를 loop 하거나 각 요소를 push 할 수 있다.**
+
+
 
 You may have wondered if you could adopt the Swift collection protocols for the stack. 
 
@@ -208,6 +220,9 @@ A stack’s purpose is to limit the number of ways to access your data, and adop
 In this case, less is more! 
 
 You might want to take an existing array and convert it to a stack so that the access order is guaranteed.  Of course it would be possible to loop through the array elements and push each element.
+
+
+
 
 
 **그러나 기본적인 프라이빗 스토리지를 설정하는 Initializer를 작성할 수 있으므로 Stack 구현사항에 다음 코드를 추가한다.**
@@ -219,6 +234,8 @@ public init(_ elements: [Element]) {
 	storage = elements
 }
 ```
+
+
 **이제, 이 example을 메인 playgrounddp 추가한다.**
 
 Now, add this example to the main playground:
@@ -234,6 +251,8 @@ example(of: "initializing a stack from an array") {
 }
 ```
 
+<br>
+
 **이 코드는 문자열 스택을 만들고 최상위 요소인 "D"를 pop 한다.**
 
 **Swift 컴파일러는 배열에서 요소 유형을 추론할 수 있으므로 더 번거로운 Stack&#60;String&#62; 대신 Stack을 사용할 수 있다는 점에 유의하자.**
@@ -242,8 +261,10 @@ This code creates a stack of strings and pops the top element "D".
 
 Notice that the Swift compiler can type infer the element type from the array so you can use Stack instead of the more verbose StackStack&#60;String&#62;.
 
-**한 단계 더 나아가서 배열 리터럴에 초기화 가능한 스택을 만들 수 있다.
-다음 코드를 Stack 구현에 추가하자.**
+
+
+**한 단계 더 나아가서 배열 리터럴에 초기화 가능한 스택을 만들 수 있다.**
+**다음 코드를 Stack 구현에 추가하자.**
 
 You can go a step further and make your stack initializable from an array literal. 
 Add this to your stack implementation:
@@ -255,6 +276,8 @@ extension Stack: ExpressibleByArrayLiteral {
 	}
 }
 ```
+
+
 
 **이제, 메인 Playgroud로 돌아가서 다음 코드를 추가하자.**
 
@@ -269,11 +292,15 @@ example(of: "initializing a stack from an array literal") {
 }
 ```
 
+<br>
+
 **이 코드는 Double 유형의 Stack을 만들고 최상위 값 4.0을 pop 한다.
 다시 말하지만, type 추론을 사용하면 더 번거로운 StackStack&#60;Double&#62;을 사용하지 않아도 된다.**
 
 This creates a stack of Doubles and pops the top value 4.0. 
-Again, type inference saves you from having to type the more verbose StackStack&#60;Double&#62;.
+Again, type inference saves you from having to type the more verbose StackStack&#60;Double&#62;
+
+
 
 **Stack은 Tree와 Graph를 검색하는 문제에 매우 중요하다. 미로를 통해 길을 찾는다고 상상해보자.**
 
@@ -306,11 +333,15 @@ Collection 내의 모든 원소는 집합 구조 내에서 자신의 위치를 �
 
 https://soooprmx.com/archives/7049
 
+
+
 #####2. Initializer
 
 Initialize는 초기화라는 뜻이다. 여기서 초기화는 모두 0 값으로 보내버리는 그런 초기화가 아니고 **변수나 상수의 초기값을 정해준다**는 의미이다. 
 
 https://m.blog.naver.com/jdub7138/220379745883
+
+
 
 #####3. Array Literal
 

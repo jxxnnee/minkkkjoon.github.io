@@ -3,26 +3,26 @@
 <br>
 **스택은 어디에나 있다. 쌓을 수 있는 것들을 몇 가지 예를 들어보자**
 
-**- 팬 케이크**
+- **팬 케이크**
 
-**- 책**
+- **책**
 
-**- 종이**
+- **종이**
 
-**- 현금**
+- **현금**
 
 **스택의 데이터 구조는 개념상 물체의 물리적 스택과 동일하다.**
 **스택에 항목을 추가 할 때는 항상 맨 위에, 제거할 때도 항상 최상위 항목을 제거한다.**
 
 Stacks are everywhere. Here are some common examples of things you would stack:
 
-• pancakes
+- pancakes
 
-• books
+- books
 
-• paper
+- paper
 
-• cash
+- cash
 
 The stack data structure is identical, in concept, to a physical stack of objects. 
 
@@ -49,15 +49,15 @@ If you had a tough time with the linked list concepts, you’ll be glad to know 
 
 **스택에 필요한 작업은 두 가지 뿐이다 :**
 
-**• push : 스택의 최상위 요소 추가**
+- **push : 스택의 최상위 요소 추가**
 
-**• pop : 스택의 최상위 요소 제거**
+- **pop : 스택의 최상위 요소 제거**
 
 There are only two essential operations for a stack:
 
-• push: Adding an element to the top of the stack.
+- push: Adding an element to the top of the stack.
 
-• pop: Removing the top element of the stack.
+- pop: Removing the top element of the stack.
 
 <br>
 
@@ -72,20 +72,20 @@ In computer science, a stack is known as a LIFO (last-in first-out) data structu
 
 **스택은 프로그래밍의 모든 분야에서 두드러지게 사용된다. 몇 개 나열하자면**
 
-**• iOS는 네이게이션 스택(pop and push)을 사용하여 뷰 컨트롤러를 화면에 띄우거나 제거한다.**
+- **iOS는 네이게이션 스택(pop and push)을 사용하여 뷰 컨트롤러를 화면에 띄우거나 제거한다.**
 
-**• 아키텍쳐 수준에서 스택을 사용하여 메모리를 할당한다. 로컬 변수에 대한 메모리도 스택을 사용하여 관리한다.**
+- **아키텍쳐 수준에서 스택을 사용하여 메모리를 할당한다. 로컬 변수에 대한 메모리도 스택을 사용하여 관리한다.**
 
-**• 미로를 빠져나온 경로를 탐색하는 알고리즘 같은 것에 숙달된다면 스택을 사용하여 역추적 하는것이 가능하다.**
+- **미로를 빠져나온 경로를 탐색하는 알고리즘 같은 것에 숙달된다면 스택을 사용하여 역추적 하는것이 가능하다.**
 
 Stacks are used prominently in all disciplines of programming. 
 To list a few:
 
-• iOS uses the navigation stack to push and pop view controllers into and out of view.
+- iOS uses the navigation stack to push and pop view controllers into and out of view.
 
-• Memory allocation uses stacks at the architectural level. Memory for local variables is also managed using a stack.
+- Memory allocation uses stacks at the architectural level. Memory for local variables is also managed using a stack.
 
-• Search and conquer algorithms, such as finding a path out of a maze, use stacks to facilitate backtracking.
+- Search and conquer algorithms, such as finding a path out of a maze, use stacks to facilitate backtracking.
 
 
 
@@ -151,6 +151,8 @@ This will allow you to customize a human-readable representation of the Stack th
 
 <br>
 
+# ㅇㅇ
+
 ##push and pop operations
 
 <br>
@@ -212,7 +214,7 @@ push and pop both have a O(1) time complexity.
 
 <br>
 
-
+ㅇㅇ
 
 ##Non-essential operations
 
@@ -238,7 +240,7 @@ peek is an operation that is often attributed to the stack interface. The idea o
 
 <br>
 
-
+ㅇㅇ
 
 ##Less is More
 

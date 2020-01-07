@@ -379,7 +379,7 @@ Collection은 일반적인 “집합 컨테이너”를 묘사하는 프로토�
 
 Collection 내의 모든 원소는 집합 구조 내에서 자신의 위치를 특정지을 수 있는 인덱스를 갖는다. 그런 동시에 Sequence를 상속하기도 했다. 하지만 이것은 Collection이 되기 위해 Sequence가 되어야 한다는 뜻은 아니다. Collection이 되면 자동으로 Sequence의 동작을 모두 수행할 수 있다는 것이다.
 
-https://soooprmx.com/archives/7049
+<https://soooprmx.com/archives/7049>
 
 <br>
 
@@ -387,7 +387,7 @@ https://soooprmx.com/archives/7049
 
 Initialize는 초기화라는 뜻이다. 여기서 초기화는 모두 0 값으로 보내버리는 그런 초기화가 아니고 **변수나 상수의 초기값을 정해준다**는 의미이다. 
 
-https://m.blog.naver.com/jdub7138/220379745883
+<https://m.blog.naver.com/jdub7138/220379745883>
 
 <br>
 
@@ -403,4 +403,4 @@ https://m.blog.naver.com/jdub7138/220379745883
 리터럴은 상수와 마찬가지로 메모리 어딘가에 값이 변하지 않도록 저장이되지만 그 이름이 없다.
 즉, 리터러이란 컴파일시 프로그램 내에 정의되어있는 그대로 정확히 해석되어야 할 값을 의미한다.
 
-https://asfirstalways.tistory.com/21
+<https://asfirstalways.tistory.com/21>

@@ -36,8 +36,6 @@ When you remove an item from a stack, you always remove the top-most item.
 
 ## Stack operations
 
-<br>
-
 **스택은 유용하고 간단하다. 스택 구축의 주요 목표는 데이터에 어떻게 엑세스할지 정하는 것이다. 
 Linked list 개념을 익히는데 어려움을 겪었다면, 스택이 비교적 사소함을 알게 되어 기쁠것이다.**
 
@@ -93,14 +91,12 @@ To list a few:
 
 ## Implementation
 
-<br>
-
 **Stack.swift 라는 이름의 Playground를 생성하여 다음 내용을 입력하자.** 
 
 ```swift
 public struct Stack<Element> {
-private var storage: [Element] = []
-public init() { }
+		private var storage: [Element] = []
+		public init() { }
 }
 extension Stack: CustomStringConvertible {
     public var description: String {
@@ -154,8 +150,6 @@ This will allow you to customize a human-readable representation of the Stack th
 <br>
 
 ## Push and Pop Operations
-
-<br>
 
 **Stack 구조체에 다음 코드를 추가한다.**
 
@@ -218,8 +212,6 @@ push and pop both have a O(1) time complexity.
 
 ## Non-essential Operations
 
-<br>
-
 **스택을 좀 더 편하게 해주는 두 가지의 작업이 있다. 다음 코드를 추가하자.**
 
 There are a couple of nice-to-have operations that make a stack easier to use. In Stack.swift, add the following to Stack:
@@ -243,8 +235,6 @@ peek is an operation that is often attributed to the stack interface. The idea o
 <br>
 
 ## Less is More
-
-<br>
 
 **스택에 Swift Collection Protocol을 적용할 수 있는지 궁금할 수 있다.** 
 
@@ -373,8 +363,6 @@ Each time you come to a decision point of left, right or straight, you can push 
 <br>
 
 ## 더 알아보자
-
-<br>
 
 #### 1. Collection protocol
 

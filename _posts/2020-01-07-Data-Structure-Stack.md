@@ -95,8 +95,8 @@ To list a few:
 
 ```swift
 public struct Stack<Element> {
-		private var storage: [Element] = []
-		public init() { }
+	private var storage: [Element] = []
+	public init() { }
 }
 extension Stack: CustomStringConvertible {
     public var description: String {
@@ -104,8 +104,8 @@ extension Stack: CustomStringConvertible {
         """
         ----top----
         \(storage.map { "\($0)" }
-        		.reversed()
-                .joined(separator: "\n"))
+        			.reversed()
+          		.joined(separator: "\n"))
         -----------
         """
 
@@ -303,7 +303,7 @@ Add this to your stack implementation:
 ```swift
 extension Stack: ExpressibleByArrayLiteral {
 	public init(arrayLiteral elements: Element...) {
-	storage = elements
+		storage = elements
 	}
 }
 ```

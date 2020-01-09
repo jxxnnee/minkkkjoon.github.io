@@ -70,7 +70,7 @@ In computer science, a stack is known as a LIFO (last-in first-out) data structu
 
 **스택은 프로그래밍의 모든 분야에서 두드러지게 사용된다. 몇 개 나열하자면**
 
-- **iOS는 네이게이션 스택(pop and push)을 사용하여 뷰 컨트롤러를 화면에 띄우거나 제거한다.**
+- **iOS는 네비게이션 스택(pop and push)을 사용하여 뷰 컨트롤러를 화면에 띄우거나 제거한다.**
 
 - **아키텍쳐 수준에서 스택을 사용하여 메모리를 할당한다. 로컬 변수에 대한 메모리도 스택을 사용하여 관리한다.**
 

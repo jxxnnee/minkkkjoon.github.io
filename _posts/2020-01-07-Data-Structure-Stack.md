@@ -267,7 +267,7 @@ public init(_ elements: [Element]) {
 ```
 <br>
 
-**이제, 이 example을 메인 playgrounddp 추가한다.**
+**이제, 이 example을 메인 playground에 추가한다.**
 
 Now, add this example to the main playground:
 
@@ -294,7 +294,7 @@ Notice that the Swift compiler can type infer the element type from the array so
 
 <br>
 
-**한 단계 더 나아가서 배열 리터럴에 초기화 가능한 스택을 만들 수 있다.**
+**한 단계 더 나아가서 배열 리터럴로 초기화 가능한 스택을 만들 수 있다.**
 **다음 코드를 Stack 구현에 추가하자.**
 
 You can go a step further and make your stack initializable from an array literal. 

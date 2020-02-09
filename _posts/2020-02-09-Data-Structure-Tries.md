@@ -2,7 +2,7 @@
 
 trie (try로 발음)는 영어 단어와 같이 컬렉션으로 표현할 수있는 데이터 저장을 전문으로하는 트리입니다.
 
-![Untitled](/_posts/Chapter 18 Tries Kor/Untitled.png)
+![Untitled.png](/images/Untitled.png)
 
 문자열의 각 문자는 노드에 매핑됩니다. 각 문자열의 마지막 노드는 종료 노드로 표시됩니다 (위 이미지의 점). Trie의 이점은 접두사 일치와 관련하여 살펴 보는 것이 가장 좋습니다.
 
@@ -25,7 +25,7 @@ trie (try로 발음)는 영어 단어와 같이 컬렉션으로 표현할 수있
 
 단어 배열의 요소 수가 적으면 합리적인 전략입니다. 그러나 수천 단어 이상을 다루는 경우 단어 배열을 통과하는 데 걸리는 시간은 용납 될 수 없습니다. `words (matching :)`의 시간 복잡도는 *O (k * n)* 입니다. 여기서 k는 모음에서 가장 긴 문자열이고 n은 확인해야 할 단어의 수입니다.
 
-![Untitled 1](/_posts/Chapter 18 Tries Kor/Untitled 1.png)
+![Untitled 1.png](/images/Untitled 1.png)
 
  *Google이 구문 분석해야하는 단어의 수를 상상해보십시오* 
 
@@ -37,17 +37,17 @@ trie 데이터 구조는 이러한 유형의 문제에 대해 우수한 성능 �
 
 먼저 C가 포함 된 노드로 이동합니다. 그러면 트리의 다른 분기가 검색 작업에서 빠르게 제외됩니다.
 
-![Untitled 2.png](/_posts/Chapter 18 Tries Kor/Untitled 2.png)
+![Untitled 2.png](/images/Untitled 2.png)
 
 다음으로 다음 문자 U가있는 단어를 찾아야합니다. U 노드로 이동합니다.
 
-![Untitled 3.png](/_posts/Chapter 18 Tries Kor/Untitled 3.png)
+![Untitled 3.png](/images/Untitled 3.png)
 
 이것이 접두사의 끝이므로 트라이는 노드 체인에 의해 형성된 모든 컬렉션을 U 노드에서 반환합니다. 이 경우 단어 CUT 및 CUTE가 반환됩니다. 이 tire에 수십만 단어가 포함되어 있다고 상상해보십시오.
 
 트라이를 사용하여 피할 수있는 비교의 수는 상당합니다.
 
-![Untitled 4.png](/_posts/Chapter 18 Tries Kor/Untitled 4.png)
+![Untitled 4.png](/images/Untitled 4.png)
 
 # 구현
 

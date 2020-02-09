@@ -2,7 +2,7 @@
 
 trie (try로 발음)는 영어 단어와 같이 컬렉션으로 표현할 수있는 데이터 저장을 전문으로하는 트리입니다.
 
-![Chapter%2018%20Tries%20Kor/Untitled.png](Chapter%2018%20Tries%20Kor/Untitled.png)
+![Untitled](/Users/mkj94/Documents/GitHub/minkkkjoon.github.io/_posts/Chapter 18 Tries Kor/Untitled.png)
 
 문자열의 각 문자는 노드에 매핑됩니다. 각 문자열의 마지막 노드는 종료 노드로 표시됩니다 (위 이미지의 점). Trie의 이점은 접두사 일치와 관련하여 살펴 보는 것이 가장 좋습니다.
 
@@ -262,7 +262,7 @@ Prefix matching 알고리즘은이 확장 안에 있으며 CollectionType은 Ran
     	// 2
     	return collections(startingWith: prefix, after: current)
     }
-    
+
 
 트라이에 접두사가 포함되어 있는지 확인하여 시작합니다. 그렇지 않으면 빈 배열을 반환합니다.
 접두사 끝을 표시하는 노드를 찾은 후 재귀 도우미 메서드 collection(startingWith : after :)을 호출하여 현재 노드 뒤의 모든 시퀀스를 찾습니다.
